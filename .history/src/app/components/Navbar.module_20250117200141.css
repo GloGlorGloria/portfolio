@@ -1,0 +1,40 @@
+.nav{
+    position: fixed;
+    top: 0px;
+    left: 0px; 
+    right: 0px;
+    z-index: 10;
+    background-color: #f8d6aa;
+    opacity: 1;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.homeIcon{
+   padding-left:2rem;
+}
+
+@media screen and (max-width: 768px){
+    .nav{
+        justify-content: space-between;
+        align-items: center;
+        margin-top:0px;
+    }
+
+    .links{
+        padding: 0px;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+   .homeIcon{
+        width: 200px;
+        height: 3rem;
+        padding: 0;
+    }
+}

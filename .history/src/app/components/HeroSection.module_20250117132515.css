@@ -1,0 +1,39 @@
+.greeting{
+    font-size:4rem;
+    color:#1f2456;
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+}
+
+.description{
+    font-size:1.5rem;
+    color:var(--primary);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+.span{
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.logo{
+    margin: 0 auto;
+    display: block;
+    width: auto;
+}
+
+/*phone size*/
+@media screen and (max-width: 768px){
+    .greeting{
+        font-size:3rem;
+        line-height: 1.2;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    .description{
+        font-size:1.2rem;
+        text-align: center;
+    }
+    
+}

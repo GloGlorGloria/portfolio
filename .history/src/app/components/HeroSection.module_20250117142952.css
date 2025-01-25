@@ -1,0 +1,69 @@
+.greeting{
+    font-size:4rem;
+    color:#1f2456;
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+}
+
+.description{
+    font-size:1.5rem;
+    color:var(--primary);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    margin-bottom:1.5rem;
+}
+
+.span{
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.logo{
+    margin: 50px auto;
+    width:auto;
+    height:auto;
+}
+
+.button{
+    padding:0.75rem 1.5rem;
+    border-radius: 9999px;
+    background-color: var(--accent);
+    color:antiquewhite;
+    font-weight: 700;
+    font-size:1.2rem;
+}
+
+.goArrow{
+    stroke-width: 1;
+    height: 50;
+}
+
+.button:hover{
+    background-color: var(--accent-hover);
+}
+
+.left{
+    margin-right:1rem;
+}
+
+/*phone size*/
+@media screen and (max-width: 768px){
+    .greeting{
+        font-size:3rem;
+        line-height: 1.2;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    .description{
+        font-size:1.2rem;
+        text-align: center;
+    }
+    
+    .button{
+        font-size:1rem;
+    }
+
+    .left{
+        margin-bottom:1rem;
+    }
+}

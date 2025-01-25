@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary:#1f2456;
+  --secondary:#e24a4a;
+  --accent: #f8951d;
+  --accent-hover: #f8a827;
+  --gradient: linear-gradient(30deg, rgb(233, 7, 7) 12%, rgb(236, 99, 2) 48%, rgb(222, 0, 78) 68%, rgb(0, 21, 210) 120%);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Nunito', sans-serif;
+}
+
+svg{
+  display: inline-block;
+  height:auto;
+  width:1.5rem;
+  margin-left:0.5rem;
+}
