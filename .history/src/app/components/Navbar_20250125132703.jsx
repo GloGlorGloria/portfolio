@@ -23,7 +23,7 @@ const navLinks = [
     // },
     {
         title:"Contact",
-        href: "/contact",
+        href: "#contact",
     },
 ]
 const Navbar = () => {

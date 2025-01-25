@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import NavLink from './NavLink'
 import styles from './MenuOverlay.module.css'

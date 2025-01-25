@@ -15,7 +15,7 @@ const navLinks = [
     },
     {
         title:"Projects",
-        href: "/projects",
+        href: "#projects",
     },
     // {
     //     title:"Resume",
@@ -23,7 +23,7 @@ const navLinks = [
     // },
     {
         title:"Contact",
-        href: "/contact",
+        href: "#contact",
     },
 ]
 const Navbar = () => {
