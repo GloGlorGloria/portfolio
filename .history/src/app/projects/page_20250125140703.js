@@ -1,0 +1,35 @@
+import styles from "./projects.module.css";
+import Link from "next/link";
+import Image from "next/image";
+
+export default function Projects() {
+  
+  const projects = [
+    { id: "1", title: "Print & E-Magazine", thumbnail: "/images/magazine_thumbnail.png" },
+    { id: "2", title: "Project Two", thumbnail: "/project2-thumb.jpg" },
+  ];
+
+  return (
+    <main className="flex min-h-screen flex-col bg-[#fff1df]">
+      <div className="container mt-24 mx-auto px-12 py-12">
+        <h1 className="text-4xl font-bold mb-8">PROJECTS</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <Link key={project.id} href={`/projects/${project.id}`} className="block">
+              <div className="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg">
+                <img
+                  src={project.thumbnail}
+                  alt={project.title}
+                  className="w-full h-auto object-cover"
+                />
+                <div className="p-4">
+                  <h2 className="text-lg font-semibold">{project.title}</h2>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+}

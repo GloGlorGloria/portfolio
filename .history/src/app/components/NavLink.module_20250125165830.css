@@ -1,0 +1,22 @@
+.menu{
+    display:block;
+    /* padding: 0.5rem 1rem 0.75rem; */
+    color: var(--primary);
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+}
+
+.menu:hover{
+    color: var(--secondary);
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        padding: 0;
+        display: flex;
+        justify-content: right;
+    }
+    
+}
