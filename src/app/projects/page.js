@@ -6,7 +6,8 @@ export default function Projects() {
   
   const projects = [
     { id: "e-magazine", title: "Print & E-Magazine", thumbnail: "/images/magazine_thumbnail.png" },
-    { id: "F1-poster", title: "F1 Poster Design", thumbnail: "/images/F1_thumbnail.png" },
+    { id: "f1-poster", title: "F1 Poster Design", thumbnail: "/images/F1_thumbnail.png" },
+    { id: "ford-poster", title: "FORD Poster Design", thumbnail: "/images/F1_thumbnail.png" },
   ];
 
   return (

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./magazine.module.css";
 import Link from "next/link";
-import { GoArrowUpRight } from "react-icons/go";
 import { PiEyesFill } from "react-icons/pi";
 import { FaBookOpen } from "react-icons/fa6";
 import { DiProlog } from "react-icons/di";
@@ -38,13 +37,13 @@ export default function EMagazineProject() {
                 </p>
               </div>
               <div className={styles.sections}>
-                <h2 className={styles.infoTitle}>Software Applied</h2>
+                <h2 className={styles.infoTitle}>Design Tools</h2>
                 <ul className={styles.skillsList}>
                   <li>
-                    <Image src="/icons/InDesign.svg" alt="InDesign Icon" width={40} height={40} />
+                    <Image src="/icons/InDesign.svg" alt="Adobe InDesign Icon" width={40} height={40} />
                   </li>
                   <li>
-                    <Image src="/icons/Photoshop.svg" alt="InDesign Icon" width={40} height={40} />
+                    <Image src="/icons/Photoshop.svg" alt="Adobe Photoshop Icon" width={40} height={40} />
                   </li>
                 </ul>
               </div>
