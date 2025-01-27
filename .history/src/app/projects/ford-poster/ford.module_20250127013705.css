@@ -1,0 +1,323 @@
+.mainContainer {
+    background-color: #fff1df;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+  
+  /* Content container */
+  .contentContainer {
+    margin: 0 auto;
+    padding: 40px 20px;
+    max-width: 1480px;
+  }
+  
+  /* Project title */
+  .sectionContainer{
+    margin-bottom: 4rem;
+  }
+
+  .projectTitle {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project__primaryTitle {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+ .project__subtitle{
+    font-size: 1.5rem;
+    color: var(--secondary);
+  }
+  
+  /* Project details container */
+  .projectDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5em;
+    margin-top: 40px;
+  }
+  
+  /* Left column for large image */
+  .leftColumn {
+    max-width: 100%;
+  }
+
+  .brandIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .brandIcon{
+    margin-top:1rem;
+    width: 7rem;
+    height: auto;
+  }
+
+  .brandIconSmall{
+    margin-top:1rem;
+    width: 5rem;
+    height: auto;
+  }
+
+  .largeImage {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Right column for project details */
+  .sections{
+    margin-bottom:1.25rem;
+  }
+
+  .rightColumn {
+    max-width: 100%;
+
+  }
+  
+  .infoTitle {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .sectionTitle{
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .projectSummary {
+    font-size: 1.2rem;
+    line-height: 1.25;
+    text-align: justify;
+  }
+  
+  .skillsList {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    gap: 1.5rem;
+  }
+
+  .skillsItem{
+    font-size: 1.2rem;
+    background-color: var(--accent);
+    padding: 0.3rem 0.8rem;
+    border-radius: 10px;
+  }
+
+  .viewOnline{
+    margin: 2.5rem 0;
+  }
+
+  .button__right{
+    padding:0.7rem 0.2rem;
+    border-radius: 9999px;
+    background: var(--gradient);
+    font-weight: 700;
+    font-size:1.2rem;
+}
+
+.goArrow{
+  stroke-width: 1;
+}
+
+.designIcon{
+  width: 2.3rem;
+  height: auto;
+  margin-left: 0.5rem;
+}
+
+.carIcon{
+  width:40px;
+  height:40px;
+}
+  
+  /* Additional project images */
+  .additionalImages {
+    width:100%;
+    height:auto;
+  }
+  
+  .additionalImagesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .additionalImages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2rem;
+  }
+
+  .projectImage_Special{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .projectName{
+    font-weight: bold;
+    font-style: italic;
+    color: var(--secondary);
+  }
+
+  .slogan{
+    font-weight: bold;
+    color: var(--secondary);
+  }
+
+  .additionalImagesGridRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1024px){
+  
+    .leftColumn {
+      /* margin-bottom: 40px; */
+    }
+
+    .largeImage {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .sections{
+      margin-bottom:0.75rem;
+    }
+
+    .projectDetails {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      margin-top: 40px;
+    }
+
+    .projectSummary {
+      font-size: 1rem;
+      line-height: 1.25;
+      text-align: justify;
+    }
+
+    .infoTitle {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    
+    .button__right{
+      font-size:1rem;
+    }
+
+    .viewOnline{
+      margin: 1.5rem 0;
+    }
+
+    .sectionTitle{
+      font-weight: bold;
+      margin-bottom: 1.2rem;
+      font-size:2rem;
+    }
+  
+    .skillsItem{
+      font-size: 1rem;
+      padding: 0.3rem 0.8rem;
+    }
+    .additionalImagesGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+  }
+
+@media screen and (max-width: 768px){
+
+  .contentContainer {
+    margin: 0 auto;
+    padding: 20px 8px;
+    max-width: 1200px;
+  }
+
+  .project__primaryTitle {
+    font-size:1.5rem;
+    text-align: center;
+  }
+  
+ .project__subtitle{
+    font-size: 1rem;
+    color: var(--secondary);
+  }
+
+  .carIcon{
+    width:30px;
+    height:30px;
+  }
+  
+  .leftColumn {
+      margin-bottom: 0px;
+  }
+
+  .projectDetails {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+      margin-top: 10px;
+  }
+
+  .rightColumn {
+    margin-top:1rem;
+    gap:calc(1rem + 1vw);
+  }
+
+  .infoTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projectSummary {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .button__right{
+    font-weight: 600;
+    font-size:0.8rem;
+  }
+
+  .skillsItem{
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .additionalImagesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+
+}
