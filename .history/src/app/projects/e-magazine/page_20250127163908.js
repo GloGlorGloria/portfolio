@@ -81,11 +81,11 @@ export default function EMagazineProject() {
               <div className={styles.sections}>
                 <h1 className={styles.sectionTitle}>Design Concept <DiProlog className={styles.designIcon}/></h1>
                 <p className={styles.projectSummary}>
-                The magazine’s design embraces harmony with nature through a palette of earthy greens and warm oranges, symbolizing growth, vitality, and balance. A circular motif on the cover reinforces the idea of sustainability and the circular economy, while ample white space and an organized layout ensure clarity and readability. Interactive digital features further enhance engagement, making the content accessible and appealing.
+                   With a clean layout, earthy tones, and minimalist typography, it reflects harmony with nature, while the circular motif on the cover symbolizes sustainability and the principles of the circular economy.
                 </p>
                 <br></br>
                 <p className={styles.projectSummary}>
-                The typography pairs Fugaz One for headings with Skia for body text, blending boldness and simplicity. Fugaz One’s modern and dynamic style draws attention to key topics, while Skia’s clean, minimal form ensures readability, reflecting the functionality and clarity central to sustainable design. Together, these elements create a cohesive, engaging experience that effectively conveys the magazine’s mission to inspire sustainable practices.
+                The magazine balances clear sections and ample white space for readability with interactive digital features to enhance engagement. It aims to inspire and educate readers on the role of sustainable design in creating a greener future.
                 </p>
               </div>
             </div>
