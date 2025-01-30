@@ -84,7 +84,7 @@ export default function f1Poster() {
                 This digital advertisement visually narrates Ford’s 121-year journey by seamlessly merging five iconic vehicles from different eras into a single cohesive form. Arranged chronologically from the 1908 Model T to the 2024 F-150 Raptor, the design highlights the evolution of Ford’s engineering, aesthetics, and technological advancements.
                 <br></br>
                 <br></br>
-                <p className={styles.projectSummary}>The gradient background and vintage-inspired typography enhance the sense of progression, while the neon glow on FORDward symbolizes innovation and forward-thinking design. With a balanced composition that ensures clarity, the ad visually bridges Ford’s past and future, reinforcing its legacy and lasting impact on transportation history.</p>
+                <p className={styles.projectSummary}>TThe gradient background and vintage-inspired typography enhance the sense of progression, while the neon glow on FORDward symbolizes innovation and forward-thinking design. With a balanced composition that ensures clarity, the ad visually bridges Ford’s past and future, reinforcing its legacy and lasting impact on transportation history.</p>
                 <br></br>
                 <span className={styles.slogan}> Ford keeps moving forward!</span>
                 </p>

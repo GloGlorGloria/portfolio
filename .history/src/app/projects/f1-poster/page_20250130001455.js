@@ -40,7 +40,7 @@ export default function f1Poster() {
               <div className={styles.sections}>
                 <h2 className={styles.infoTitle}>Summary</h2>
                 <p className={styles.projectSummary}>
-                This F1 poster series features three prominent drivers and their notable Grand Prix victories in 2024. Each poster focuses on a key moment of triumph, using bold visuals and thoughtful design to reflect the energy of the race and the driver’s individual achievements in the season.
+                This F1 poster series celebrates three standout drivers and their Grand Prix victories in 2024. Each design captures a defining moment of triumph, blending bold visuals with dynamic storytelling to bring the energy of the sport to life.
                 </p>
               </div>
               <div className={styles.sections}>
@@ -69,11 +69,11 @@ export default function f1Poster() {
               <div className={styles.sections}>
                 <h1 className={styles.sectionTitle}>Design Concept <DiProlog className={styles.designIcon}/></h1>
                 <p className={styles.projectSummary}>
-                This series highlights each F1 driver and their car with bold contrasts and vibrant, saturated colors, amplifying their energy. In contrast, desaturated backgrounds of iconic Grand Prix locations subtly anchor each piece without competing for attention. This deliberate balance of saturation and desaturation creates depth, ensuring a clear visual hierarchy that keeps the focus on the action.
+                The design emphasizes the central figures—each F1 driver and their car—using high contrast and vibrant colors to draw attention and convey a sense of power and motion. To complement the dynamic foreground, the background incorporates desaturated imagery of iconic scenic spots from the respective Grand Prix locations, serving as subtle nods to the global stage of the competition.
                 </p>
                 <br></br>
                 <p className={styles.projectSummary}>
-                Neon accents, gradients, and noise effects further enhance the sleek, high-energy aesthetic, mirroring the speed and innovation of F1. Every detail is crafted to immerse viewers in the adrenaline-charged atmosphere of the race, blending sport, culture, and artistry into a striking visual celebration.
+                Neon colors, gradients, and noise effects add layers of texture and modernity, creating a striking visual style that reflects the high-tech, high-speed world of F1. These design choices aim to immerse the audience in the atmosphere of the race while celebrating the fusion of sport, culture, and artistry.
                 </p>
               </div>
             </div>

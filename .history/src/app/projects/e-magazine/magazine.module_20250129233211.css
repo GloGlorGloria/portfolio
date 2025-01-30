@@ -1,3 +1,4 @@
+
 .mainContainer {
     background-color: #fff1df;
     min-height: 100vh;
@@ -17,18 +18,15 @@
   .sectionContainer{
     margin-bottom: 4rem;
   }
-
-  .projectTitle {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .project__primaryTitle {
     display:flex; 
     justify-content: center;
     align-items: center;
     gap: 1rem;
+  }
+
+  .projectTitle {
+    text-align: center;
   }
   
  .project__subtitle{
@@ -48,26 +46,7 @@
   .leftColumn {
     max-width: 100%;
   }
-
-  .brandIcons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-  }
   
-  .brandIcon{
-    margin-top:1rem;
-    width: 7rem;
-    height: auto;
-  }
-
-  .brandIconSmall{
-    margin-top:1rem;
-    width: 5rem;
-    height: auto;
-  }
-
   .largeImage {
     width: 100%;
     height: auto;
@@ -139,9 +118,9 @@
   margin-left: 0.5rem;
 }
 
-.carIcon{
-  width:40px;
-  height:40px;
+.bookOpen{
+  width:35px;
+  height:35px;
 }
   
   /* Additional project images */
@@ -150,12 +129,11 @@
     height:auto;
   }
   
-  .additionalImagesGrid {
+  .imagesGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 24px;
     margin-top: 30px;
-    width: 100%;
   }
 
   .additionalImages{
@@ -180,25 +158,14 @@
 
   .projectName{
     font-weight: bold;
-    font-style: italic;
     color: var(--secondary);
   }
 
-  .slogan{
-    font-weight: bold;
-    color: var(--secondary);
-  }
-
-  .additionalImagesGridRight{
-    display: flex;
-    flex-direction: column;
-    justify-content:baseline;
-    gap: 2rem;
-  }
-
-  .highlight{
-    font-weight: bold;
-    color: var(--secondary);
+  .colorPalette{
+    background-color: #004424;
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
   }
 
   @media screen and (max-width: 1024px){
@@ -249,13 +216,10 @@
       margin-bottom: 1.2rem;
       font-size:2rem;
     }
-  
+
     .skillsItem{
       font-size: 1rem;
       padding: 0.3rem 0.8rem;
-    }
-    .additionalImagesGrid {
-      grid-template-columns: repeat(2, 1fr);
     }
 
   }
@@ -278,9 +242,9 @@
     color: var(--secondary);
   }
 
-  .carIcon{
-    width:30px;
-    height:30px;
+  .bookOpen{
+    width:25px;
+    height:25px;
   }
   
   .leftColumn {
@@ -319,10 +283,6 @@
   .skillsItem{
     padding: 0.5rem 0.75rem;
     font-size: 0.8rem;
-  }
-
-  .additionalImagesGrid {
-    grid-template-columns: 1fr;
   }
   
 

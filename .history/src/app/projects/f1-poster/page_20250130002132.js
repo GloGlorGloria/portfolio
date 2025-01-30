@@ -40,7 +40,7 @@ export default function f1Poster() {
               <div className={styles.sections}>
                 <h2 className={styles.infoTitle}>Summary</h2>
                 <p className={styles.projectSummary}>
-                This F1 poster series features three prominent drivers and their notable Grand Prix victories in 2024. Each poster focuses on a key moment of triumph, using bold visuals and thoughtful design to reflect the energy of the race and the driver’s individual achievements in the season.
+                This F1 poster series celebrates three standout drivers and their Grand Prix victories in 2024. Each design captures a defining moment of triumph, blending bold visuals with dynamic storytelling to bring the energy of the sport to life.
                 </p>
               </div>
               <div className={styles.sections}>

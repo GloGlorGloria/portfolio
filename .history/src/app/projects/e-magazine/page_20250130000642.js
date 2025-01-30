@@ -105,13 +105,20 @@ export default function EMagazineProject() {
         {/* Additional Project Images */}
         <div className={styles.additionalImages}>
             <div>
-                {/* <Image 
-                    src={"/images/Magazine Color.png"} 
+                <Image 
+                    src={"/images/magazine_color.png"} 
                     alt="Color Palette" 
                     width={300} 
                     height={100} 
                     className={styles.colorImage} 
-                /> */}
+                />
+                <Image 
+                    src={"/images/magazine color.png"} 
+                    alt="Color Palette" 
+                    width={300} 
+                    height={100} 
+                    className={styles.colorImage} 
+                />
                 <Image
                   src="/images/magazine_front.png"
                   alt="Magazine Content - front"
