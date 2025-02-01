@@ -1,0 +1,11 @@
+.about__span{
+    margin-right: 0.75rem; 
+    font-weight: semi-bold;
+
+}
+
+.about__span:hover{
+    color: #f1c40f;
+    list-style: underline;
+    cursor: pointer;
+}

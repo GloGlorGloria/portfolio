@@ -1,0 +1,13 @@
+.about__span{
+    margin-right: 0.75rem; 
+    font-weight: 700;
+}
+
+.about__span:hover{
+    color: var(--accent-hover);
+    cursor: pointer;
+}
+
+.active{
+    border-bottom: 2.5px dashed var(--secondary)
+}

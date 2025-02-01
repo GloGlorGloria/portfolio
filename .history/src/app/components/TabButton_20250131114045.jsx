@@ -1,0 +1,20 @@
+import styles from './TabButton.module.css';
+
+import React from 'react'
+
+const TabButton = ({ active, selectTab, children }) => {
+const buttonClasses = active ? `${styles.about__span} ${styles.active}` : styles.about__span;
+
+  return (
+    <div>
+      <button className={styles.about__span}>
+        Skills
+        {children}
+      </button>
+    </div>
+  )
+}
+
+export default TabButton
+
+
