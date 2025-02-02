@@ -104,7 +104,7 @@ export default function f1Poster() {
                         className={styles.thumbnailImage}
                     />
                      <Image
-                        src="/images/projects/cans/White-bg-front-back.png"
+                        src="/images/projects/cans/White tea bg back front.png"
                         alt="White Tea Can Front and Back"
                         width={800}
                         height={400}
@@ -156,21 +156,21 @@ export default function f1Poster() {
             </div>
             <div className={styles.additionalImagesGrid}>
               <Image
-                src="/images/projects/cans/White-Cans.png"
+                src="/images/projects/cans/White Tea Cans.png"
                 alt="Image of White Tea Cans"  
                 width={800}
                 height={400}
                 className={styles.projectImage}
               />
               <Image
-                src="/images/projects/cans/Green-cans.png"
+                src="/images/projects/cans/Green Tea Cans.png"
                 alt="Image of Green Tea Cans"
                 width={800}
                 height={400}
                 className={styles.projectImage}
               />
               <Image
-                src="/images/projects/cans/Black-cans.png"
+                src="/images/projects/cans/Black Tea Cans.png"
                 alt="Image of Black Tea Cans"
                 width={800}
                 height={400}
