@@ -1,0 +1,26 @@
+.footer{
+    display:flex;
+    flex: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.socialIcons{
+    border: solid 1px;
+    border-radius: 9999px;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.7s ease, border-color 0.7s ease, transform 0.7s ease;
+    color: var(--accent);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.socialIcons:hover{
+    color: var(--secondary);
+    border-color: var(--primary);
+    transform: translateY(-0.2rem);
+}

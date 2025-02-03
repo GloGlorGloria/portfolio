@@ -1,0 +1,114 @@
+.greeting__container{
+    font-size:4rem;
+    color:#1f2456;
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+}
+
+.greeting{
+    color:transparent;
+    background: var(--gradient);
+    background-clip: text;
+    margin-bottom: 5rem;
+}
+
+.description{
+    font-size:1.5rem;
+    color:var(--primary);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    margin:2rem 0;
+}
+
+.span{
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.logo{
+    /* margin: 50px auto; */
+    width:100%;
+    height:auto;
+}
+
+.button__left{
+    padding:0.75rem 1.5rem;
+    border-radius: 9999px;
+    background: rgb(249,32,32);
+    background: var(--gradient);
+    color:antiquewhite;
+    font-weight: 700;
+    font-size:1.2rem;
+    margin-right:1rem;
+    margin-top:2rem;
+}
+
+.button__right{
+    padding:0.25rem 0.25rem;
+    border-radius: 9999px;
+    background: var(--gradient);
+    font-weight: 700;
+    font-size:1.2rem;
+}
+
+.goArrow{
+    stroke-width: 1;
+}
+
+.button__left:hover{
+    background-color: var(--accent-hover);
+}
+
+.button__right:hover{
+    background-color:antiquewhite;
+}
+
+@media screen and (max-width: 1024px){
+    .greeting__container{
+        font-size:3.5rem;
+        line-height: 1.2;
+        margin-bottom: 5%;
+    }
+    .description{
+        font-size:1.3rem;
+    }
+    .button__left,
+    .button__right{
+        font-size:1.2rem;
+        margin: 0;
+        margin-bottom:1rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .greeting__container{
+        font-size:3rem;
+        line-height: 1.2;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    .description{
+        font-size:1.2rem;
+        text-align: center;
+    }
+    
+    .buttons{
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        justify-content: center;
+    }
+
+    .button__left,
+    .button__right{
+        font-size:1.2rem;
+        margin: 0;
+        margin-bottom:1rem;
+        width: 100%;
+    }
+
+    .logo{
+        width: 80%;
+        margin: 2rem auto;
+    }
+}

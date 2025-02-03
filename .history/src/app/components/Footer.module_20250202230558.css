@@ -1,0 +1,5 @@
+.footer{
+    display:flex;
+    flex: row;
+    justify-content: space-between;
+}
