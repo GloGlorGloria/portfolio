@@ -13,7 +13,7 @@ export default function Projects() {
 
   return (
     <main className="flex min-h-screen flex-col bg-[#fff1df]">
-      <div className="container mt-24 mx-auto px-16 py-12">
+      <div className="container mt-24 mx-auto px-12 py-12">
         <h1 className="text-4xl font-bold mb-8">Featured Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
