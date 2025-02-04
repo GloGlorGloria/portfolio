@@ -7,8 +7,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .socialIcons__container {
@@ -16,6 +15,7 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
   transition: all 0.7s ease;
 }
 
@@ -38,29 +38,21 @@
 }
 
 .socialIconsHorizontal {
-  display:flex;
   flex-direction: row;
-  justify-content: flex-start;
   gap: 1rem;
 }
 
 .socialIconsVertical {
-  display:flex;
   flex-direction: column;
   position: fixed;
-  left: 160px;
-  bottom: 2.5rem;
+  bottom: 10px;
+  left: 10px;
   z-index: 50;
   gap: 0.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .socialIconsVertical {
-    display: none;
+    flex-direction: column;
   }
-
-  .socialIconsHorizontal {
-    gap: 0.5rem;
-  }
-  
 }

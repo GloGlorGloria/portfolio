@@ -7,8 +7,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
+  padding: 0 1rem;
 }
 
 .socialIcons__container {
@@ -49,18 +48,9 @@
   flex-direction: column;
   position: fixed;
   left: 160px;
-  bottom: 2.5rem;
+  bottom: 10px;
   z-index: 50;
   gap: 0.5rem;
 }
 
-@media screen and (max-width: 768px) {
-  .socialIconsVertical {
-    display: none;
-  }
 
-  .socialIconsHorizontal {
-    gap: 0.5rem;
-  }
-  
-}

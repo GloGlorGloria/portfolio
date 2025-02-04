@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
 
       <div
-        className={`${styles.socialIcons__container} ${
+        className={`${styles.socialIcons} ${
           isFooterVisible ? styles.socialIconsHorizontal : styles.socialIconsVertical
         }`}
       >

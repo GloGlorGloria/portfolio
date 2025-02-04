@@ -35,7 +35,7 @@ export default function EMagazineProject() {
                 <h2 className={styles.infoTitle}>Summary</h2>
                 <p className={styles.projectSummary}>
                 <span className={styles.projectName}>Building for Future</span> is a magazine showcasing sustainable architecture through innovative designs and eco-friendly practices.
-                The project includes both a printed magazine and an interactive digital version for online publication.
+                The deliverables include a printed magazine and an interactive digital version for online publication.
                 </p>
               </div>
               <div className={styles.sections}>

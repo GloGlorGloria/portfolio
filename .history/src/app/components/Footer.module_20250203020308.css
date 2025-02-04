@@ -7,7 +7,6 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 0;
 }
 
@@ -60,6 +59,9 @@
   }
 
   .socialIconsHorizontal {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
     gap: 0.5rem;
   }
   

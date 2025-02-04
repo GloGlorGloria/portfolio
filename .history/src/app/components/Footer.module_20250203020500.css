@@ -7,8 +7,9 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding: 1rem 0;
+
 }
 
 .socialIcons__container {
