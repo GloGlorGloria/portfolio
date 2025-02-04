@@ -10,7 +10,7 @@
   /* Content container */
   .contentContainer {
     margin: 0 auto;
-    padding: 40px 4rem;
+    padding: 40px 120px;
     max-width: 1480px;
   }
   
@@ -40,7 +40,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 5em;
     margin-top: 40px;
-    align-items: center;
   }
   
   /* Left column for large image */

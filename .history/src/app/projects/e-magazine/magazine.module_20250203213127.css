@@ -40,7 +40,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 5em;
     margin-top: 40px;
-    align-items: center;
   }
   
   /* Left column for large image */

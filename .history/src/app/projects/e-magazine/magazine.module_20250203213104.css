@@ -17,6 +17,8 @@
   /* Project title */
   .sectionContainer{
     margin-bottom: 4rem;
+    display:flex;
+    align-items: center;
   }
   .project__primaryTitle {
     display:flex; 
@@ -40,7 +42,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 5em;
     margin-top: 40px;
-    align-items: center;
   }
   
   /* Left column for large image */
