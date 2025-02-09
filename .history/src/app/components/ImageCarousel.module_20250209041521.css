@@ -1,0 +1,35 @@
+/* 🟡 Carousel wrapper to keep it inside the grid */
+.carouselWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* 🟡 Swiper container */
+  .swiper {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  /* 🟡 Ensure slides stay in position */
+  .swiperSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 🟡 Fix image sizing */
+  .carouselImage {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

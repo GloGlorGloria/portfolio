@@ -1,0 +1,26 @@
+.carouselWrapper {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ensure Swiper doesn't overflow */
+  .swiper {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Ensure images properly fit the container */
+  .carouselImage {
+    width: 100%; 
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Prevent excessive enlargement */
+    object-fit: contain; /* Ensures the image fits without being cropped */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

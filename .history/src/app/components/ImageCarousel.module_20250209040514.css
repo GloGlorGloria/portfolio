@@ -1,0 +1,68 @@
+/* 🟢 Ensure carousel stays inside the grid */
+.carouselWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Needed for positioning arrows */
+    overflow: hidden;
+  }
+  
+  /* 🟢 Swiper container */
+  .swiper {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    position: relative; /* Needed to keep arrows inside */
+  }
+  
+  /* 🟢 Ensure slides don't move unexpectedly */
+  .swiperSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 🟢 Fix image sizing */
+  .carouselImage {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 🔥 Fix Swiper Arrow Position & Color */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #ffcc00 !important; /* Force custom arrow color */
+    background: rgba(0, 0, 0, 0.6) !important; /* Dark background */
+    padding: 12px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  /* 🔥 Move arrows inside the image */
+  .swiper-button-prev {
+    left: 10px; /* Adjust left arrow position */
+  }
+  
+  .swiper-button-next {
+    right: 10px; /* Adjust right arrow position */
+  }
+  
+  /* 🔥 Force arrow icon color */
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 18px !important;
+    color: #ffcc00 !important; /* Ensure yellow arrows */
+    font-weight: bold;
+  }
+  

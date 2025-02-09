@@ -1,0 +1,53 @@
+/* Ensure Swiper fits inside grid */
+.carouselWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Custom Swiper container */
+  .swiper {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Custom Swiper slide */
+  .swiperSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ensure images fit properly */
+  .carouselImage {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Prevents excessive enlargement */
+    object-fit: contain; /* Keeps aspect ratio */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Manually styled navigation arrows */
+  .swiper-button-next,
+  .swiper-button-prev {
+    background: rgba(0, 0, 0, 0.6) !important; /* Dark background */
+    padding: 12px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Custom arrow icon color */
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 20px !important;
+    color: #ffcc00 !important; /* Yellow arrows */
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,37 @@
+.carouselWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the carousel */
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .swiper {
+    width: 50%; /* Ensures it takes half of the grid */
+    max-width: 800px; /* Prevents excessive width */
+  }
+  
+  .carouselImage {
+    width: 100%;
+    height: max-content;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: contain; /* Ensures the full image fits without cropping */
+  }
+  
+  /* Swiper Navigation Arrows */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white !important;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 20px;
+  }
+  

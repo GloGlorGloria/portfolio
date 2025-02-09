@@ -1,0 +1,25 @@
+/* 🟢 Ensure the carousel container allows space for arrows */
+.carouselWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 60px; /* Adds space for arrows */
+    overflow: visible; /* 🔥 Prevents arrows from being hidden */
+  }
+  
+  /* 🟢 Swiper container */
+  .swiper {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    position: relative;
+  }
+  
+  /* 🔥 Adjust Swiper navigation arrows */
+  .swiper-button-next,
+  .swiper-button-prev {
+    border-radius: 50%; /* Circular button */
+    background: rgba(0, 0, 0, 0
+  

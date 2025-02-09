@@ -1,0 +1,44 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .modalContent {
+    position: relative;
+    max-width: 90vw; /* Prevents the modal from exceeding viewport width */
+    max-height: 90vh; /* Prevents the modal from exceeding viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures no extra space */
+  }
+  
+  .fullImage {
+    width: auto; /* Maintain natural width */
+    height: auto; /* Maintain natural height */
+    max-width: 100%; /* Prevents it from exceeding modal width */
+    max-height: 100%; /* Prevents it from exceeding modal height */
+    object-fit: contain; /* Ensures the whole image is visible without cropping */
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 8px 12px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  

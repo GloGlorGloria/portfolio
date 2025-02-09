@@ -1,0 +1,29 @@
+.carouselWrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .carouselImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+/* Override Swiper button styles */
+:deep(.swiper-button-next),
+:deep(.swiper-button-prev) {
+  background: rgba(0, 0, 0, 0.6) !important; /* Dark background */
+  padding: 12px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+/* Change the arrow color */
+:deep(.swiper-button-next::after),
+:deep(.swiper-button-prev::after) {
+  font-size: 20px !important;
+  color: #ffcc00 !important;  /* Yellow arrows */
+}
