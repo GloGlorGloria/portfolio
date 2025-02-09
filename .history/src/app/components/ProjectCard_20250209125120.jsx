@@ -23,8 +23,10 @@ const ProjectCard = ({ imgUrl, title, description, projUrl }) => {
           <Link href={projUrl} className="h-14 w-14 border-2 relative rounded-full border-accent hover:border-white group/link">
             <GiEntryDoor className="h-10 w-10 text-accent m-2 cursor-pointer group-hover/link:text-white" />
           </Link>
+          
         </div>
       </div>
+
       {/* Text Content */}
       {/* <div className="text-secondary rounded-b-xl mb-3 bg-accent bg-opacity-50 py-6 px-4">
         <h5 className="text-xl font-semibold">{title}</h5>

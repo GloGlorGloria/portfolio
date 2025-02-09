@@ -1,0 +1,30 @@
+"use client";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { GiEntryDoor } from "react-icons/gi";
+
+const ProjectCard = ({ imgUrl, title, description, projUrl }) => {
+  return (
+    <div>
+        
+        <div 
+            className="min-h-[400px] md:min-h-[500px] rounded-xl overflow-hidden relative group"
+            style={{ background: `url(${imgUrl})`, backgroundSize: "cover", }}
+        >
+            <div className="overlay flex flex-row gap-7 items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] rounded-t-xl bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
+                <Link href={projUrl} className="h-14 w-14 border-2 relative rounded-full border-accent hover:border-white group/link">
+                    <GiEntryDoor className="h-10 w-10 text-accent m-2 cursor-pointer group-hover/link:text-white"/>
+                </Link>
+                <h1 className="text-white text-xl font-semibold">{title}</h1>
+            </div>
+        </div>
+        {/* <div className="text-secondary rounded-b-xl mb-3 bg-accent bg-opacity-50 py-6 px-4">
+            <h5 className="text-xl font-semibold">{title}</h5>
+            <p className="text-primary">{description}</p>
+        </div> */}
+    </div>
+  )
+}
+
+export default ProjectCard

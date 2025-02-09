@@ -55,8 +55,8 @@ const ProjectsSection = () => {
         {projectsData.map((project) => 
         <ProjectCard 
             key={project.id} 
-            title={project.title}
-            description={project.description}
+            // title={project.title}
+            // description={project.description}
             imgUrl={project.image}
             projUrl={project.projUrl}/>)}
     </div>

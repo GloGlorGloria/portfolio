@@ -7,7 +7,7 @@ import { GiEntryDoor } from "react-icons/gi";
 const ProjectCard = ({ imgUrl, title, description, projUrl }) => {
   return (
     <div className="w-full max-w-xl mx-auto space-y-4">
-    <div className="relative w-full h-72 md:h-[28rem] lg:h-[45rem]rounded-xl overflow-hidden group">
+    <div className="relative w-full h-[500px] rounded-xl overflow-hidden group">
         <Image
           src={imgUrl}
           alt={title}
@@ -18,13 +18,14 @@ const ProjectCard = ({ imgUrl, title, description, projUrl }) => {
           objectPosition="center"
           className="rounded-xl"
         />
-        <div className="absolute inset-0 flex flex-row gap-7 items-center justify-center rounded-xl bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
-          <h1 className="text-white text-xl font-semibold">{title}</h1>
+        <div className="absolute inset-0 flex flex-row gap-7 items-center justify-center bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
           <Link href={projUrl} className="h-14 w-14 border-2 relative rounded-full border-accent hover:border-white group/link">
             <GiEntryDoor className="h-10 w-10 text-accent m-2 cursor-pointer group-hover/link:text-white" />
           </Link>
+          <h1 className="text-white text-xl font-semibold">{title}</h1>
         </div>
       </div>
+
       {/* Text Content */}
       {/* <div className="text-secondary rounded-b-xl mb-3 bg-accent bg-opacity-50 py-6 px-4">
         <h5 className="text-xl font-semibold">{title}</h5>
