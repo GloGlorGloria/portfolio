@@ -189,7 +189,7 @@ export default function Relay() {
             {/* Left Column: Large Image */}
               <div className={styles.rightColumn}>
               <div className={styles.sections}>
-                <h1 className={styles.sectionTitle}>User Research <RiSurveyFill className={styles.designIcon}/></h1>
+                <h1 className={styles.sectionTitle}>User Research <RiSurveyFill  className={styles.designIcon}/></h1>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
                   User research uncovered key challenges parents face in managing their children’s transportation. Three key insights emerged:
