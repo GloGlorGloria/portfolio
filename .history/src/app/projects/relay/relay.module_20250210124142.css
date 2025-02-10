@@ -105,8 +105,6 @@
     font-weight: bold;
     margin-bottom: 1.5rem;
     padding-bottom: 0.1rem; 
-    display:flex;
-    gap: 0.5rem;
   }
 
   .takeAway {
@@ -335,9 +333,6 @@
       font-weight: bold;
       margin-bottom: 1.2rem;
       font-size:2rem;
-      display:flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .skillsItem{

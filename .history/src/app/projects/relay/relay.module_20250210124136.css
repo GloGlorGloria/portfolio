@@ -105,8 +105,6 @@
     font-weight: bold;
     margin-bottom: 1.5rem;
     padding-bottom: 0.1rem; 
-    display:flex;
-    gap: 0.5rem;
   }
 
   .takeAway {
@@ -216,6 +214,8 @@
   width: 2.3rem;
   height: auto;
   margin-left: 0.5rem;
+  display:flex;
+  align-items: center;
 }
 
 .bookOpen{
@@ -335,9 +335,6 @@
       font-weight: bold;
       margin-bottom: 1.2rem;
       font-size:2rem;
-      display:flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .skillsItem{
