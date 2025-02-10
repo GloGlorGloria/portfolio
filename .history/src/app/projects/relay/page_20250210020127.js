@@ -29,11 +29,6 @@ export default function Relay() {
     "/images/projects/relay/GPS.png",
   ];
 
-  const trustedCommunity  = [ 
-    "/images/projects/relay/relay-connect.png",
-    "/images/projects/relay/chatbox.png",
-  ];
-
   return (
     <main className={styles.mainContainer}>
       <div className={styles.contentContainer}>
@@ -361,27 +356,41 @@ export default function Relay() {
             {/* Left Column: Large Image */}
               <div className={styles.rightColumn}>
                 <div className={styles.sections}>
-                  <ImageCarousel className={styles.largeImage} images={trustedCommunity} /> 
+                  <ImageCarousel className={styles.largeImage} images={safetyFeatures} /> 
                 </div>
               </div>
             </div>
         </section>
 
-        <div className={styles.viewOnline}>
-                  <Link
-                    href="https://www.youtube.com/watch?v=NxCmZUCoi6U&t=10s&ab_channel=GloGlorGloria"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${styles.button__right} ${styles.large_button}`} 
-                  >
-                  <span 
-                    className="bg-[#fff0df] hover:text-orange-500 rounded-full px-3.5 py-1.5" 
-                  > App Demo  <FaCirclePlay className={styles.goArrow}/> </span>
-                  {/* Try it out! <GoArrowUpRight className={`${styles.goArrow}`}/> */}
-                  </Link>
-                </div>
-
+        {/* Additional Project Images */}
+        <div className={styles.additionalImages}>
+            <div>
+                {/* <Image 
+                    src={"/images/Magazine Color.png"} 
+                    alt="Color Palette" 
+                    width={300} 
+                    height={100} 
+                    className={styles.colorImage} 
+                /> */}
+                <Image
+                  src="/images/projects/magazine/magazine_front.png"
+                  alt="Magazine Content - front"
+                  width={800}
+                  height={400}
+                  className={styles.projectImage_Special}
+                />
+            </div>
+            <div>
+              <Image
+                src="/images/projects/magazine/magazine_content.png"
+                alt="Magazine Content"
+                width={800}
+                height={400}
+                className={styles.projectImage}
+              />
           </div>
+        </div>
+      </div>
     </main>
   );
 }

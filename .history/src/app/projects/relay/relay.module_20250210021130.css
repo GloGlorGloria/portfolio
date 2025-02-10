@@ -184,6 +184,13 @@
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
+.button__right:hover {
+  transform: scale(1.1); /* Slightly enlarges button */
+  background-color: #ffcc99; /* Smoothly changes background color */
+}
+
+
+
 .goArrow{
   stroke-width: 1;
 }

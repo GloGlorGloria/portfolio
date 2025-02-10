@@ -3,7 +3,7 @@ const nextConfig = {
     async headers() {
       return [
         {
-          source: "/(.*)", 
+          source: "/(.*)", // Apply CSP to all routes
           headers: [
             {
               key: "Content-Security-Policy",

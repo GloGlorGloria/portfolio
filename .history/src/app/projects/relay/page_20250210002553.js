@@ -19,21 +19,6 @@ export default function Relay() {
     "/images/projects/relay/secondary-persona.png",
   ];
 
-  const smartRoute = [
-    "/images/projects/relay/relay-share.png",
-    "/images/projects/relay/post-request.png",
-  ];
-
-  const safetyFeatures = [ 
-    "/images/projects/relay/relay-empower.png",
-    "/images/projects/relay/GPS.png",
-  ];
-
-  const trustedCommunity  = [ 
-    "/images/projects/relay/relay-connect.png",
-    "/images/projects/relay/chatbox.png",
-  ];
-
   return (
     <main className={styles.mainContainer}>
       <div className={styles.contentContainer}>
@@ -197,9 +182,9 @@ export default function Relay() {
                 </div>
                 <div>
                   <ul>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Scheduling conflicts</span> — 75% of parents struggle to arrange transportation due to conflicting schedules, and 67% report that transportation issues have disrupted their children’s participation in activities.</li>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Safety concerns</span> —100% of parents agree that GPS tracking is essential, and 83% prefer private groups to organize carpools within trusted networks.</li>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Rideshare demand</span> — 75% of parents struggle to arrange transportation due to conflicting schedules, and 67% report that transportation issues have disrupted their children’s participation in activities.</li>
+                    <li className={styles.numberList}><span className="font-bold">Scheduling conflicts</span> — 75% of parents struggle to arrange transportation due to conflicting schedules, and 67% report that transportation issues have disrupted their children’s participation in activities.</li>
+                    <li className={styles.numberList}><span className="font-bold">Safety concerns</span> —100% of parents agree that GPS tracking is essential, and 83% prefer private groups to organize carpools within trusted networks.</li>
+                    <li className={styles.numberList}><span className="font-bold">Rideshare demand</span> — 75% of parents struggle to arrange transportation due to conflicting schedules, and 67% report that transportation issues have disrupted their children’s participation in activities.</li>
                   </ul>
                 </div>
                 <div>
@@ -235,8 +220,8 @@ export default function Relay() {
                   </p>
                   <br></br>
                   <ul>
-                    <li className={styles.numberList}><span className="font-bold text-primary">Meet Joseph</span>, a full-time software engineer and father of a 10-year-old son, struggles to arrange reliable rides due to his demanding schedule. He values a tech-driven ridesharing solution with GPS tracking and reliable network. </li>
-                    <li className={styles.numberList}><span className="font-bold text-accent">Meet Sarah</span>, a part-time climate policy advisor, enjoys helping her community by giving kids rides but finds it hard to coordinate with busy parents. She seeks a platform that simplifies scheduling, enhances communication, and builds connection. </li>
+                    <li className={styles.numberList}><span className="font-bold">Meet Joseph</span>, a full-time software engineer and father of a 10-year-old son, struggles to arrange reliable rides due to his demanding schedule. He values a tech-driven ridesharing solution with GPS tracking and reliable network. </li>
+                    <li className={styles.numberList}><span className="font-bold">Meet Sarah</span>, a part-time climate policy advisor, enjoys helping her community by giving kids rides but finds it hard to coordinate with busy parents. She seeks a platform that simplifies scheduling, enhances communication, and builds connection. </li>
                   </ul>
                   <p className={styles.projectSummary}>These personas guided app development by representing real users' needs, behaviors, and challenges, ensuring the design and features effectively meet user expectations.</p>
                 </div>        
@@ -291,97 +276,65 @@ export default function Relay() {
             {selectedImage && <ImageModal src={selectedImage} alt="Relay User Research Data" onClose={() => setSelectedImage(null)} />}
         </section>
 
-         {/* Key Features 1 */}
+         {/* Key Features */}
          <section className={styles.sectionContainer}>
-          <h1 className="text-center">App Highlights</h1>
+          <h1 className="text-center">Features Highlight</h1>
           <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
             <div className={styles.leftColumn}>
             <h2 className={styles.sectionTitle}>1. Smart Route Matching</h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
-                  Relay's Smart Route Matching streamlines carpooling by <span className="font-bold text-secondary">automatically suggesting ride matches </span>based on similar routes and times. Previously, parents had to manually coordinate schedules with other individuals, but with Relay, the process becomes effortless with just a few taps.
-                  </p>
-                  <br></br>
-                  <p className={styles.projectSummary}> The app also <span className="font-bold text-secondary">estimates ride time changes</span> based on different matches, allowing parents to quickly form carpools with others heading to the same destination based on their preferences. This not only saves time but also makes kids transportation more efficient, easing the load for parents.</p>
-                </div>        
-            </div>
-            {/* Left Column: Large Image */}
-              <div className={styles.rightColumn}>
-                <div className={styles.sections}>
-                  <ImageCarousel className={styles.largeImage} images={smartRoute} /> 
-                </div>
-              </div>
-            </div>
-        </section>
-
-         {/* Key Features 2 */}
-         <section className={styles.sectionContainer}>
-          <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
-            <div className={styles.leftColumn}>
-            <h2 className={styles.sectionTitle}>2. Safety at the heart of Relay</h2>
-                <div className="mb-4">
-                  <p className={styles.projectSummary}>
-                  Relay prioritizes safety just as every parent does for their child, with features designed to provide confidence in every ride.
+                  To make sure Relay truly works for parents, user personas were created based on real stories from surveys and interviews. 
                   </p>
                   <br></br>
                   <ul>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Real-Time GPS Tracking </span>— Parents can track their child’s ride from start to finish, ensuring peace of mind.</li>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">AI-Powered Ride Notifications </span>— Timely updates on ride progress and arrival times keep parents informed, making them feel as if they’re riding along.</li>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Unique Ride PIN </span>— A secure, trip-specific PIN ensures kids enter the correct car, adding an extra layer of protection.</li>
+                    <li className={styles.numberList}><span className="font-bold">Meet Joseph</span>, a full-time software engineer and father of a 10-year-old son, struggles to arrange reliable rides due to his demanding schedule. He values a tech-driven ridesharing solution with GPS tracking and reliable network. </li>
+                    <li className={styles.numberList}><span className="font-bold">Meet Sarah</span>, a part-time climate policy advisor, enjoys helping her community by giving kids rides but finds it hard to coordinate with busy parents. She seeks a platform that simplifies scheduling, enhances communication, and builds connection. </li>
                   </ul>
-                  <p className={styles.projectSummary}>By leveraging technology, Relay not only addresses common ridesharing concerns but also empowers parents to manage their children’s transportation with ease and confidence.
-                  </p>
+                  <p className={styles.projectSummary}>These personas guided app development by representing real users' needs, behaviors, and challenges, ensuring the design and features effectively meet user expectations.</p>
                 </div>        
             </div>
             {/* Left Column: Large Image */}
               <div className={styles.rightColumn}>
                 <div className={styles.sections}>
-                  <ImageCarousel className={styles.largeImage} images={safetyFeatures} /> 
+                  <ImageCarousel className={styles.largeImage} images={userPersona} /> 
                 </div>
               </div>
             </div>
-        </section>
-
-         {/* Key Features 3 */}
-         <section className={styles.sectionContainer}>
-          <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
-            <div className={styles.leftColumn}>
-            <h2 className={styles.sectionTitle}>3. Connect with trusted community</h2>
-                <div className="mb-4">
-                  <p className={styles.projectSummary}>
-                  No parent would hand their child off to a stranger—that’s why Relay builds a trusted community. Instead of random drivers, parents connect with others from the <span className="font-bold text-secondary">same school or activity group</span> to share the driving load. Every parent we surveyed preferred ridesharing with familiar faces!
-                  </p>
-                  <br></br>
-                  <p className={styles.projectSummary}>To ensure security, identity verification is required to join school groups, confirming all members have children at the same school. Parents can also <span className="font-bold text-secondary">create private groups</span> with their trusted network, using in-app messaging and coordination tools for seamless rideshare planning. 
-                  </p>
-                  <br></br>
-                  <p className={styles.projectSummary}>Beyond convenience, ridesharing strengthens connections, helping both parents and kids <span className="font-bold text-secondary">build closer relationships</span> within their community.</p>
-                </div>        
-            </div>
-            {/* Left Column: Large Image */}
-              <div className={styles.rightColumn}>
-                <div className={styles.sections}>
-                  <ImageCarousel className={styles.largeImage} images={trustedCommunity} /> 
-                </div>
-              </div>
+            <div>
+              <FaAnglesDown  className={styles.downArrow}/>
             </div>
         </section>
 
-        <div className={styles.viewOnline}>
-                  <Link
-                    href="https://www.youtube.com/watch?v=NxCmZUCoi6U&t=10s&ab_channel=GloGlorGloria"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${styles.button__right} ${styles.large_button}`} 
-                  >
-                  <span 
-                    className="bg-[#fff0df] hover:text-orange-500 rounded-full px-3.5 py-1.5" 
-                  > App Demo  <FaCirclePlay className={styles.goArrow}/> </span>
-                  {/* Try it out! <GoArrowUpRight className={`${styles.goArrow}`}/> */}
-                  </Link>
-                </div>
-
+        {/* Additional Project Images */}
+        <div className={styles.additionalImages}>
+            <div>
+                {/* <Image 
+                    src={"/images/Magazine Color.png"} 
+                    alt="Color Palette" 
+                    width={300} 
+                    height={100} 
+                    className={styles.colorImage} 
+                /> */}
+                <Image
+                  src="/images/projects/magazine/magazine_front.png"
+                  alt="Magazine Content - front"
+                  width={800}
+                  height={400}
+                  className={styles.projectImage_Special}
+                />
+            </div>
+            <div>
+              <Image
+                src="/images/projects/magazine/magazine_content.png"
+                alt="Magazine Content"
+                width={800}
+                height={400}
+                className={styles.projectImage}
+              />
           </div>
+        </div>
+      </div>
     </main>
   );
 }

@@ -39,11 +39,11 @@
 }
 
 .swiper-button-prev {
-  left: 0 !important; 
+  left: 1 !important; 
 }
 
 .swiper-button-next {
-  right: 0 !important; 
+  right: 1 !important; 
 }
 
 .swiper-button-next::after,

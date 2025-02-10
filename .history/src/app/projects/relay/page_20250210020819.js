@@ -372,7 +372,7 @@ export default function Relay() {
                     href="https://www.youtube.com/watch?v=NxCmZUCoi6U&t=10s&ab_channel=GloGlorGloria"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`${styles.button__right} ${styles.large_button}`} 
+                    className={styles.large_button} 
                   >
                   <span 
                     className="bg-[#fff0df] hover:text-orange-500 rounded-full px-3.5 py-1.5" 

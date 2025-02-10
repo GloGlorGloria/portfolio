@@ -76,7 +76,10 @@
 @media screen and (max-width: 768px){
   :root {
     padding: 0 16px;
-    width: 100%;
+  }
+
+  .html{
+    padding:0;
   }
   
 }

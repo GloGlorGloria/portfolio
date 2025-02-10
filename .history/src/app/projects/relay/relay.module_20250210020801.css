@@ -175,14 +175,19 @@
     background: var(--gradient);
     font-weight: 600;
     font-size:1rem;
-    transition: transform 0.2s ease, background-color 0.2s ease;
 }
-
 
 .large_button{
-  font-size:1.5rem;
+  font-size: 1.25rem; /* Increase font size */
+  padding: 1rem 2rem; /* Increase padding */
+  border-radius: 9999px; /* Ensure rounded shape */
+  display: inline-flex; /* Align icon and text properly */
+  align-items: center; 
+  gap: 0.5rem; /* Add space between text and icon */
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
+
+
 
 .goArrow{
   stroke-width: 1;

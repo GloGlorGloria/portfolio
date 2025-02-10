@@ -29,11 +29,6 @@ export default function Relay() {
     "/images/projects/relay/GPS.png",
   ];
 
-  const trustedCommunity  = [ 
-    "/images/projects/relay/relay-connect.png",
-    "/images/projects/relay/chatbox.png",
-  ];
-
   return (
     <main className={styles.mainContainer}>
       <div className={styles.contentContainer}>
@@ -352,36 +347,50 @@ export default function Relay() {
                   No parent would hand their child off to a stranger—that’s why Relay builds a trusted community. Instead of random drivers, parents connect with others from the <span className="font-bold text-secondary">same school or activity group</span> to share the driving load. Every parent we surveyed preferred ridesharing with familiar faces!
                   </p>
                   <br></br>
-                  <p className={styles.projectSummary}>To ensure security, identity verification is required to join school groups, confirming all members have children at the same school. Parents can also <span className="font-bold text-secondary">create private groups</span> with their trusted network, using in-app messaging and coordination tools for seamless rideshare planning. 
+                  <p className={styles.projectSummary}>To ensure security, identity verification is required to join school groups, confirming all members have children at the same school. Parents can also create private groups with their trusted network, using in-app messaging and coordination tools for seamless carpool planning. 
                   </p>
                   <br></br>
-                  <p className={styles.projectSummary}>Beyond convenience, ridesharing strengthens connections, helping both parents and kids <span className="font-bold text-secondary">build closer relationships</span> within their community.</p>
+                  <p className={styles.projectSummary}>Beyond convenience, ridesharing strengthens connections, helping both parents and kids build closer relationships within their community.</p>
                 </div>        
             </div>
             {/* Left Column: Large Image */}
               <div className={styles.rightColumn}>
                 <div className={styles.sections}>
-                  <ImageCarousel className={styles.largeImage} images={trustedCommunity} /> 
+                  <ImageCarousel className={styles.largeImage} images={safetyFeatures} /> 
                 </div>
               </div>
             </div>
         </section>
 
-        <div className={styles.viewOnline}>
-                  <Link
-                    href="https://www.youtube.com/watch?v=NxCmZUCoi6U&t=10s&ab_channel=GloGlorGloria"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${styles.button__right} ${styles.large_button}`} 
-                  >
-                  <span 
-                    className="bg-[#fff0df] hover:text-orange-500 rounded-full px-3.5 py-1.5" 
-                  > App Demo  <FaCirclePlay className={styles.goArrow}/> </span>
-                  {/* Try it out! <GoArrowUpRight className={`${styles.goArrow}`}/> */}
-                  </Link>
-                </div>
-
+        {/* Additional Project Images */}
+        <div className={styles.additionalImages}>
+            <div>
+                {/* <Image 
+                    src={"/images/Magazine Color.png"} 
+                    alt="Color Palette" 
+                    width={300} 
+                    height={100} 
+                    className={styles.colorImage} 
+                /> */}
+                <Image
+                  src="/images/projects/magazine/magazine_front.png"
+                  alt="Magazine Content - front"
+                  width={800}
+                  height={400}
+                  className={styles.projectImage_Special}
+                />
+            </div>
+            <div>
+              <Image
+                src="/images/projects/magazine/magazine_content.png"
+                alt="Magazine Content"
+                width={800}
+                height={400}
+                className={styles.projectImage}
+              />
           </div>
+        </div>
+      </div>
     </main>
   );
 }

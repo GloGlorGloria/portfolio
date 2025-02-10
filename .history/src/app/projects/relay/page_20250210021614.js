@@ -367,7 +367,7 @@ export default function Relay() {
             </div>
         </section>
 
-        <div className={styles.viewOnline}>
+        <div className={styles.viewOnline text-align}>
                   <Link
                     href="https://www.youtube.com/watch?v=NxCmZUCoi6U&t=10s&ab_channel=GloGlorGloria"
                     target="_blank"
