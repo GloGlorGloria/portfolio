@@ -350,7 +350,7 @@ export default function Relay() {
          <section className={styles.sectionContainer}>
           <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
             <div className={styles.leftColumn}>
-            <h2 className={styles.sectionTitle}>3. Connect with trusted community <FaPeopleRoof className={styles.designIcon__small}/></h2>
+            <h2 className={styles.sectionTitle}>3. Connect with trusted community</h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
                   No parent would hand their child off to a stranger—that’s why Relay builds a trusted community. Instead of random drivers, parents connect with others from the <span className="font-bold text-secondary">same school or activity group</span> to share the driving load. Every parent we surveyed preferred ridesharing with familiar faces!

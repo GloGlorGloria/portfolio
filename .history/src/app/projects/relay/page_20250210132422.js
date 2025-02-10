@@ -5,7 +5,7 @@ import styles from "./relay.module.css";
 import Link from "next/link";
 import ImageModal from "@/app/components/ImageModal";
 import ImageCarousel from "@/app/components/ImageCarousel";
-import { FaCirclePlay, FaWordpress, FaAnglesDown, FaRoute, FaPeopleRoof} from "react-icons/fa6";
+import { FaCirclePlay, FaWordpress, FaAnglesDown, FaRoute } from "react-icons/fa6";
 import { PiFigmaLogoDuotone } from "react-icons/pi";
 import { RiParentFill, RiSurveyFill } from "react-icons/ri";
 import { BiSolidUserDetail } from "react-icons/bi";
@@ -300,7 +300,7 @@ export default function Relay() {
           <h1 className="text-center">App Highlights <BsStars className={styles.designIcon}/></h1>
           <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
             <div className={styles.leftColumn}>
-            <h2 className={styles.sectionTitle}>1. Smart Route Matching <FaRoute className={styles.designIcon__small}/> </h2>
+            <h2 className={styles.sectionTitle}>1. Smart Route Matching <FaRoute className={styles.designIcon}/> </h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
                   Relay's Smart Route Matching streamlines carpooling by <span className="font-bold text-secondary">automatically suggesting ride matches </span>based on similar routes and times. Previously, parents had to manually coordinate schedules with other individuals, but with Relay, the process becomes effortless with just a few taps.
@@ -322,7 +322,7 @@ export default function Relay() {
          <section className={styles.sectionContainer}>
           <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
             <div className={styles.leftColumn}>
-            <h2 className={styles.sectionTitle}>2. Safety at the heart of Relay <FaSafari className={styles.designIcon__small}/></h2>
+            <h2 className={styles.sectionTitle}>2. Safety at the heart of Relay <FaSafari className={styles.designIcon}/></h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
                   Relay prioritizes safety just as every parent does for their child, with features designed to provide confidence in every ride.
@@ -350,7 +350,7 @@ export default function Relay() {
          <section className={styles.sectionContainer}>
           <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
             <div className={styles.leftColumn}>
-            <h2 className={styles.sectionTitle}>3. Connect with trusted community <FaPeopleRoof className={styles.designIcon__small}/></h2>
+            <h2 className={styles.sectionTitle}>3. Connect with trusted community</h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
                   No parent would hand their child off to a stranger—that’s why Relay builds a trusted community. Instead of random drivers, parents connect with others from the <span className="font-bold text-secondary">same school or activity group</span> to share the driving load. Every parent we surveyed preferred ridesharing with familiar faces!

@@ -5,13 +5,11 @@ import styles from "./relay.module.css";
 import Link from "next/link";
 import ImageModal from "@/app/components/ImageModal";
 import ImageCarousel from "@/app/components/ImageCarousel";
-import { FaCirclePlay, FaWordpress, FaAnglesDown, FaRoute, FaPeopleRoof} from "react-icons/fa6";
+import { FaCirclePlay, FaWordpress, FaAnglesDown } from "react-icons/fa6";
 import { PiFigmaLogoDuotone } from "react-icons/pi";
 import { RiParentFill, RiSurveyFill } from "react-icons/ri";
 import { BiSolidUserDetail } from "react-icons/bi";
-import { BsStars } from "react-icons/bs";
 import { DiProlog } from "react-icons/di";
-import { FaSafari } from "react-icons/fa";
 import { LuWorkflow } from "react-icons/lu";
 
 export default function Relay() {
@@ -279,7 +277,7 @@ export default function Relay() {
             {/* Left Column: Large Image */}
               <div className={styles.rightColumn}>
               <div className={styles.sections}>
-                <h1 className={styles.sectionTitle}>User Workflow <LuWorkflow className={styles.designIcon}/></h1>
+                <h1 className={styles.sectionTitle}>User Workflow <LuWorkflow  className={styles.designIcon}/></h1>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
                   An app workflow and user story map were created to visualize the user journey, streamline navigation, and prioritize features within a tight timeline. The workflow offered a structured framework for intuitive interactions, ensuring both designers and developers had a clear understanding of the app's flow. </p>
@@ -297,10 +295,10 @@ export default function Relay() {
 
          {/* Key Features 1 */}
          <section className={styles.sectionContainer}>
-          <h1 className="text-center">App Highlights <BsStars className={styles.designIcon}/></h1>
+          <h1 className="text-center">App Highlights</h1>
           <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
             <div className={styles.leftColumn}>
-            <h2 className={styles.sectionTitle}>1. Smart Route Matching <FaRoute className={styles.designIcon__small}/> </h2>
+            <h2 className={styles.sectionTitle}>1. Smart Route Matching</h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
                   Relay's Smart Route Matching streamlines carpooling by <span className="font-bold text-secondary">automatically suggesting ride matches </span>based on similar routes and times. Previously, parents had to manually coordinate schedules with other individuals, but with Relay, the process becomes effortless with just a few taps.
@@ -322,7 +320,7 @@ export default function Relay() {
          <section className={styles.sectionContainer}>
           <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
             <div className={styles.leftColumn}>
-            <h2 className={styles.sectionTitle}>2. Safety at the heart of Relay <FaSafari className={styles.designIcon__small}/></h2>
+            <h2 className={styles.sectionTitle}>2. Safety at the heart of Relay</h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
                   Relay prioritizes safety just as every parent does for their child, with features designed to provide confidence in every ride.
@@ -350,7 +348,7 @@ export default function Relay() {
          <section className={styles.sectionContainer}>
           <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
             <div className={styles.leftColumn}>
-            <h2 className={styles.sectionTitle}>3. Connect with trusted community <FaPeopleRoof className={styles.designIcon__small}/></h2>
+            <h2 className={styles.sectionTitle}>3. Connect with trusted community</h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
                   No parent would hand their child off to a stranger—that’s why Relay builds a trusted community. Instead of random drivers, parents connect with others from the <span className="font-bold text-secondary">same school or activity group</span> to share the driving load. Every parent we surveyed preferred ridesharing with familiar faces!
