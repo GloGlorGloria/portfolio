@@ -54,17 +54,10 @@
   gap: 0.5rem;
 }
 
-@media screen and (max-width: 1924px) {
+@media screen and (max-width: 1524px) {
   .socialIconsVertical {
-    left: 120px;
+    left: 100px;
   }
-}
-
-@media screen and (max-width: 1824px) {
-  .socialIconsVertical {
-    left: 80px;
-  }
-}
   
 
 @media screen and (max-width: 1024px) {

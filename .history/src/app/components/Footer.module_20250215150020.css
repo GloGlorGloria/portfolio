@@ -56,13 +56,13 @@
 
 @media screen and (max-width: 1924px) {
   .socialIconsVertical {
-    left: 120px;
+    left: 60px;
   }
 }
 
-@media screen and (max-width: 1824px) {
+@media screen and (max-width: 1524px) {
   .socialIconsVertical {
-    left: 80px;
+    left: 100px;
   }
 }
   
