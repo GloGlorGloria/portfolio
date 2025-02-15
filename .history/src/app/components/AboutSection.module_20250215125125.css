@@ -1,0 +1,9 @@
+@media (hover) {
+    .hover-effect > * {
+        transition: opacity 0.3s var(--ease-3);
+    }
+
+    .hover-effect:hover > *:not(:hover) {
+        opacity: 0.25;
+    }
+}

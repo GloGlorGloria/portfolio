@@ -1,0 +1,153 @@
+/* Base Styles */
+.greeting__container {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: #1f2456;
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.greeting {
+    color: transparent;
+    background: var(--gradient);
+    background-clip: text;
+}
+
+.description {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: var(--primary);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.span {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.logo {
+    margin: 50px auto;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+.button__left,
+.button__right {
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    background: var(--gradient);
+    color: antiquewhite;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.button__left {
+    margin-right: 1rem;
+}
+
+.button__left:hover,
+.button__right:hover {
+    background-color: var(--accent-hover);
+}
+
+.goArrow {
+    stroke-width: 1;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 1280px) {
+    .greeting__container {
+        font-size: 3.8rem;
+    }
+    .description {
+        font-size: 1.4rem;
+    }
+    .logo {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .greeting__container {
+        font-size: 3.5rem;
+    }
+    .description {
+        font-size: 1.3rem;
+    }
+    .button__left,
+    .button__right {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .logo {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .greeting__container {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .description {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .button__left,
+    .button__right {
+        width: 90%;
+    }
+    .logo {
+        width: 75%;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .greeting__container {
+        font-size: 2.8rem;
+    }
+    .description {
+        font-size: 1.1rem;
+    }
+    .button__left,
+    .button__right {
+        width: 100%;
+    }
+    .logo {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .greeting__container {
+        font-size: 2.5rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .button__left,
+    .button__right {
+        font-size: 1rem;
+        width: 100%;
+        padding: 0.6rem;
+    }
+    .logo {
+        max-width: 280px;
+    }
+}

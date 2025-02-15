@@ -1,0 +1,13 @@
+.hoverEffect {
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media (hover) {
+    :global(.hoverEffect:hover) > * {
+        opacity: 0.25;
+    }
+
+    :global(.hoverEffect:hover) > *:hover {
+        opacity: 1;
+    }
+}

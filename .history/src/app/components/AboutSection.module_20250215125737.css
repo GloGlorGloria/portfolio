@@ -1,0 +1,12 @@
+@media (hover) {
+    .hoverEffect:hover ul > * {
+        opacity: 0.25;
+        transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out;
+    }
+
+    .hoverEffect:hover ul > *:hover {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.1); /* Light background effect */
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,98 @@
+/* Base Styles */
+.container {
+    display: grid;
+    align-items: stretch;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    padding: 7rem 0;
+    margin-bottom: 4rem;
+}
+
+.content {
+    grid-column: span 7;
+    align-self: center;
+}
+
+@media screen and (max-width: 425px) {
+    .greeting__container {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .description {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        gap: 0.25rem;
+    }
+    .button__left,
+    .button__right {
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .logo {
+        width: 80%;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .greeting__container {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 5%;
+        text-align: left;
+    }
+    .description {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+    .button__left,
+    .button__right {
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .logo {
+        width: 100%;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .greeting__container {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        margin-bottom: 5%;
+    }
+    .description {
+        font-size: 1.3rem;
+    }
+    .button__left,
+    .button__right {
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,15 @@
+.hoverEffect ul > * {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.hoverEffect ul > *:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: var(--primary); /* Your theme color */
+    transition: width 0.3s ease-in-out;
+}
