@@ -510,7 +510,7 @@ export default function Relay() {
               <div className={styles.rightColumn}>
                 <div className={styles.sections}>
                   <video
-                  src="/videos/relay/promo-video.mp4"
+                  src="/videos/relay/promo-video-c.mp4"
                   width={1200}
                   height={800}
                   className={styles.largeVideo}
