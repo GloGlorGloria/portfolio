@@ -1,0 +1,51 @@
+.carouselWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* Swiper Container - Adjusting max-width for responsiveness */
+.swiper {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+}
+
+/* Swiper Slide - Ensuring Proper Alignment */
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Carousel Image - Ensure Images Scale Well */
+.carouselImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper {
+      width: 95%;
+      max-width: 500px;
+  }
+  .carouselImage {
+      border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swiper {
+      width: 100%;
+      max-width: 400px;
+  }
+  .carouselImage {
+      border-radius: 10px;
+  }
+}
