@@ -10,11 +10,12 @@ import { PiFigmaLogoDuotone } from "react-icons/pi";
 import { RiParentFill, RiSurveyFill, RiPresentationFill } from "react-icons/ri";
 import { BiSolidUserDetail } from "react-icons/bi";
 import { BsStars } from "react-icons/bs";
-import { FaSafari, FaVideo, FaHandPointRight } from "react-icons/fa";
+import { FaSafari, FaVideo } from "react-icons/fa";
 import { LuWorkflow } from "react-icons/lu";
 import { IoIosColorPalette } from "react-icons/io";
 import { GiBoxingGloveSurprise } from "react-icons/gi";
 import { IoHappy } from "react-icons/io5";
+import { GoArrowUpRight } from "react-icons/go";
 
 export default function Relay() {
 
@@ -613,8 +614,8 @@ export default function Relay() {
             </div>
         </section>
         <div className={styles.nextProject}>
-          <Link href="/projects/e-magazine" passHref>
-              <button className={styles.nextButton}>See Next<FaHandPointRight className={`${styles.nextArrow}`}/></button>
+          <Link href="/projects" passHref>
+              <button className={styles.button__left}>See Next<GoArrowUpRight className={`${styles.goArrow}`}/></button>
           </Link> 
         </div>
           </div>

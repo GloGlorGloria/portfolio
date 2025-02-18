@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./can.module.css";
 import { GiSodaCan } from "react-icons/gi";
-import Link from "next/link";
+
 import { FaHandPointRight } from "react-icons/fa";
 import { DiProlog } from "react-icons/di";
 
@@ -178,9 +178,9 @@ export default function f1Poster() {
               />
             </div>
         </div>
-
+        
         <div className={styles.nextProject}>
-          <Link href="/projects/f1-poster" passHref>
+          <Link href="/projects/can-design" passHref>
               <button className={styles.nextButton}>See Next<FaHandPointRight className={`${styles.nextArrow}`}/></button>
           </Link> 
         </div>

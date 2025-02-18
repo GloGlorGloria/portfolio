@@ -180,7 +180,7 @@ export default function f1Poster() {
         </div>
 
         <div className={styles.nextProject}>
-          <Link href="/projects/f1-poster" passHref>
+          <Link href="/projects/can-design" passHref>
               <button className={styles.nextButton}>See Next<FaHandPointRight className={`${styles.nextArrow}`}/></button>
           </Link> 
         </div>

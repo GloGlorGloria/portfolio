@@ -3,7 +3,6 @@ import styles from "./f1-poster.module.css";
 import Link from "next/link";
 import { IoCarSport } from "react-icons/io5";
 import { DiProlog } from "react-icons/di";
-import { FaHandPointRight } from "react-icons/fa";
 
 export default function f1Poster() {
   return (
@@ -132,7 +131,7 @@ export default function f1Poster() {
         </div>
 
         <div className={styles.nextProject}>
-          <Link href="/projects/ford-poster" passHref>
+          <Link href="/projects/f1-poster" passHref>
               <button className={styles.nextButton}>See Next<FaHandPointRight className={`${styles.nextArrow}`}/></button>
           </Link> 
         </div>

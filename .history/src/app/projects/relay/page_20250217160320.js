@@ -10,7 +10,7 @@ import { PiFigmaLogoDuotone } from "react-icons/pi";
 import { RiParentFill, RiSurveyFill, RiPresentationFill } from "react-icons/ri";
 import { BiSolidUserDetail } from "react-icons/bi";
 import { BsStars } from "react-icons/bs";
-import { FaSafari, FaVideo, FaHandPointRight } from "react-icons/fa";
+import { FaSafari, FaVideo } from "react-icons/fa";
 import { LuWorkflow } from "react-icons/lu";
 import { IoIosColorPalette } from "react-icons/io";
 import { GiBoxingGloveSurprise } from "react-icons/gi";
@@ -585,7 +585,7 @@ export default function Relay() {
                     Originally, the team envisioned a broad ridesharing solution focused on eco-friendliness and resource sharing. However, after in-depth research and considering a tight timeline, the focus shifted to the specific challenges faced by working parents. It also became clear that parents were <span className="font-bold text-secondary">hesitant to use ridesharing</span> for their children without robust safety measures, so the concept was refined to emphasize safety and trust. </p>
                   <br></br>
                   <p className={styles.projectSummary}>
-                    Building Relay presented significant challenges. The app <span className="font-bold text-secondary">required dynamic accounts for both parents and drivers</span>, a <span className="font-bold text-secondary">user-friendly yet advanced interface</span>, and features such as smart route matching, AI ride notifications, and GPS live tracking. Overcoming these obstacles not only took extra time but also confirmed Relay's potential to make a real difference. Special thanks to everyone for their hard work and dedication in bringing Relay to life!</p>
+                    Building Relay presented significant challenges. The app required <span className="font-bold text-secondary">dynamic accounts for both parents and drivers</span>, a <span className="font-bold text-secondary">user-friendly yet advanced interface</span>, and features such as smart route matching, AI ride notifications, and GPS live tracking. Overcoming these obstacles not only took extra time but also confirmed Relay's potential to make a real difference. Special thanks to everyone for their hard work and dedication in bringing Relay to life!</p>
                     <br></br>
                   <p className={styles.projectSummary}>Meet the <span></span>
                   <Link
@@ -612,11 +612,6 @@ export default function Relay() {
               </div>
             </div>
         </section>
-        <div className={styles.nextProject}>
-          <Link href="/projects/e-magazine" passHref>
-              <button className={styles.nextButton}>See Next<FaHandPointRight className={`${styles.nextArrow}`}/></button>
-          </Link> 
-        </div>
           </div>
     </main>
   );

@@ -4,7 +4,6 @@ import Link from "next/link";
 import { PiEyesFill } from "react-icons/pi";
 import { FaBookOpen } from "react-icons/fa6";
 import { DiProlog } from "react-icons/di";
-import { FaHandPointRight } from "react-icons/fa";
 
 export default function EMagazineProject() {
   return (

@@ -7,14 +7,14 @@ import ImageModal from "@/app/components/ImageModal";
 import ImageCarousel from "@/app/components/ImageCarousel";
 import { FaCirclePlay, FaWordpress, FaAnglesDown, FaRoute, FaPeopleRoof} from "react-icons/fa6";
 import { PiFigmaLogoDuotone } from "react-icons/pi";
-import { RiParentFill, RiSurveyFill, RiPresentationFill } from "react-icons/ri";
+import { RiParentFill, RiSurveyFill } from "react-icons/ri";
 import { BiSolidUserDetail } from "react-icons/bi";
 import { BsStars } from "react-icons/bs";
-import { FaSafari, FaVideo, FaHandPointRight } from "react-icons/fa";
+import { DiProlog } from "react-icons/di";
+import { FaSafari, FaVideo  } from "react-icons/fa";
 import { LuWorkflow } from "react-icons/lu";
 import { IoIosColorPalette } from "react-icons/io";
-import { GiBoxingGloveSurprise } from "react-icons/gi";
-import { IoHappy } from "react-icons/io5";
+
 
 export default function Relay() {
 
@@ -459,7 +459,7 @@ export default function Relay() {
             {/* Left Column: Large Image */}
               <div className={styles.rightColumn}>
               <div className={styles.sections}>
-                <h1 className={styles.sectionTitle}>Marketing & Branding <GiBoxingGloveSurprise className={styles.designIcon}/></h1>
+                <h1 className={styles.sectionTitle}>Marketing & Branding <RiSurveyFill className={styles.designIcon}/></h1>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
                   Bringing Relay to life goes beyond building the app. The team created a variety of promotional materials, including a <span></span>
@@ -525,98 +525,9 @@ export default function Relay() {
                 </div>
               </div>
             </div>
-            <div>
-              <FaAnglesDown  className={styles.downArrow}/>
-            </div>
         </section>
 
-        {/* Project Pitching */}
-        <section className={styles.sectionContainer}>
-          <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
-            <div className={styles.leftColumn}>
-              <Image
-                  src="/images/projects/relay/team.png"
-                  alt="Relay presents at the Annual Student Innovation Design & Technology Showcase"
-                  width={1200}
-                  height={800}
-                  className={styles.largeImage}
-                  style={{ cursor: "pointer" }}
-                  onClick={() => setSelectedImage("/images/projects/relay/team.png")}
-                />
-            </div>
-            {/* Left Column: Large Image */}
-              <div className={styles.rightColumn}>
-              <div className={styles.sections}>
-                <h1 className={styles.sectionTitle}>Project Pitching<RiPresentationFill className={styles.designIcon}/></h1>
-                <div className="mb-4">
-                  <p className={styles.projectSummary}>
-                  After three months of hard work, Relay was showcased at the <span></span>
-                  <Link
-                    href="https://www.linkedin.com/posts/joanne-chng_d3-fswd-underrepresented-activity-7272008089032101888-M0ZR?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACAo8pABy7XeZAU3e9L93PoBx8d7dSyWUOg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${styles.projectName} ${styles.link}`}
-                  >Annual Student Innovation Design & Technology Showcase</Link>. The idea was presented to distinguished judges—including BC Minister of Post-Secondary Education and Future Skills Anne Kang, City of Burnaby Mayor Mike Hurley, angel investors, industry leaders, and other notable guests. </p>
-                  <br></br>
-                  <p className={styles.projectSummary}>Relay was honored with the <span></span>
-                  <Link
-                    href="https://www.linkedin.com/posts/whchan-gloria_thank-you-for-supporting-relay-i-activity-7272040016611057665-kO7k?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACAo8pABy7XeZAU3e9L93PoBx8d7dSyWUOg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${styles.projectName} ${styles.link}`}
-                  >Gold Award</Link> and received valuable feedback from everyone who expressed interest. Special thanks are extended to the faculty, instructors, families interviewed, and the kids who assisted with filming and organized special prizes.</p>
-                </div>
-              </div>
-              </div>
-            </div>
-            <div>
-              <FaAnglesDown  className={styles.downArrow}/>
-            </div>
-        </section>
 
-              {/* Conclusion*/}
-              <section className={styles.sectionContainer}>
-          <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
-            <div className={styles.leftColumn}>
-            <div className={styles.sections}>
-                <h1 className={styles.sectionTitle}>Unforgettable Journey<IoHappy className={styles.designIcon}/></h1>
-                <div className="mb-4">
-                  <p className={styles.projectSummary}>
-                    Originally, the team envisioned a broad ridesharing solution focused on eco-friendliness and resource sharing. However, after in-depth research and considering a tight timeline, the focus shifted to the specific challenges faced by working parents. It also became clear that parents were <span className="font-bold text-secondary">hesitant to use ridesharing</span> for their children without robust safety measures, so the concept was refined to emphasize safety and trust. </p>
-                  <br></br>
-                  <p className={styles.projectSummary}>
-                    Building Relay presented significant challenges. The app <span className="font-bold text-secondary">required dynamic accounts for both parents and drivers</span>, a <span className="font-bold text-secondary">user-friendly yet advanced interface</span>, and features such as smart route matching, AI ride notifications, and GPS live tracking. Overcoming these obstacles not only took extra time but also confirmed Relay's potential to make a real difference. Special thanks to everyone for their hard work and dedication in bringing Relay to life!</p>
-                    <br></br>
-                  <p className={styles.projectSummary}>Meet the <span></span>
-                  <Link
-                    href="https://relay.arspera.com/about/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${styles.projectName} ${styles.link}`}
-                  >team</Link> behind Relay! </p>
-                </div>
-              </div>
-             
-            </div>
-            {/* Left Column: Large Image */}
-              <div className={styles.rightColumn}>
-                <Image
-                    src="/images/projects/relay/meet-team.png"
-                    alt="Relay presents at the Annual Student Innovation Design & Technology Showcase"
-                    width={1200}
-                    height={800}
-                    className={styles.largeImage}
-                    style={{ cursor: "pointer" }}
-                    onClick={() => setSelectedImage("/images/projects/relay/meet-team.png")}
-                  />
-              </div>
-            </div>
-        </section>
-        <div className={styles.nextProject}>
-          <Link href="/projects/e-magazine" passHref>
-              <button className={styles.nextButton}>See Next<FaHandPointRight className={`${styles.nextArrow}`}/></button>
-          </Link> 
-        </div>
           </div>
     </main>
   );

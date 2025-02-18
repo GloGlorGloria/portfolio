@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./ford.module.css";
 import Link from "next/link";
-import { FaHandPointRight } from "react-icons/fa";
+
 import { FaTruckPickup } from "react-icons/fa6";
 import { DiProlog } from "react-icons/di";
 
