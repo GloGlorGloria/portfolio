@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./projects.module.css";
 import Link from "next/link";
 
@@ -13,7 +13,6 @@ export default function Projects() {
     { id: "f1-poster", title: "F1 Poster Design", category: ["Graphic Design"], thumbnail: "/images/projects/F1/F1_thumbnail.png" },
     { id: "ford-poster", title: "FORD eAdvert", category: ["Graphic Design"], thumbnail: "/images/projects/Ford/Fordward_iPad.jpg" },
     { id: "wordpress", title: "Website Design", category: ["Development"], thumbnail: "/images/projects/wordpress/wordpress-thumbnail.png" },
-    { id: "minigame", title: "Mini JavaScript Game", category: ["Development"], thumbnail: "/images/projects/minigame/minigame-thumbnail.png" },
   ];
 
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -22,6 +21,9 @@ export default function Projects() {
     selectedCategory === "All"
       ? projects
       : projects.filter((project) => project.category.includes(selectedCategory));
+
+  // Simulated list of valid project pages
+  const validProjectIds = new Set(["relay", "e-magazine", "can-design", "f1-poster", "ford-poster"]);
 
   return (
     <main className={styles.mainContainer}>
@@ -41,37 +43,28 @@ export default function Projects() {
           ))}
         </div>
 
+        {/* Projects Grid */}
         <div className={styles.grid}>
-  {filteredProjects.length > 0 ? (
-    filteredProjects.map((project) => {
-      const isComingSoon = ["weconnect", "fitquest", "wordpress", "minigame"].includes(project.id);
-
-      return isComingSoon ? (
-        // If project is "coming soon", disable the link and show only the div
-        <div key={project.id} className={`${styles.projectCard} ${styles.specialHover}`}>
-          <img src={project.thumbnail} alt={project.title} className={styles.projectThumbnail} />
-          <div className={styles.projectDetails}>
-            <h2 className={styles.projectTitle}>{project.title}</h2>
-          </div>
-          <div className={styles.comingSoon}>Coming Soon</div>
+          {filteredProjects.length > 0 ? (
+            filteredProjects.map((project) => (
+              <div key={project.id} className={styles.projectCard}>
+                <img src={project.thumbnail} alt={project.title} className={styles.projectThumbnail} />
+                <div className={styles.projectDetails}>
+                  <h2 className={styles.projectTitle}>{project.title}</h2>
+                  {validProjectIds.has(project.id) ? (
+                    <Link href={`/projects/${project.id}`} className={styles.projectLink}>
+                      View Project →
+                    </Link>
+                  ) : (
+                    <p className={styles.noDetails}>More details are being added!</p>
+                  )}
+                </div>
+              </div>
+            ))
+          ) : (
+            <p className={styles.noProjects}>More projects are being added!</p>
+          )}
         </div>
-      ) : (
-        // Otherwise, wrap in a Link component
-        <Link key={project.id} href={`/projects/${project.id}`} className={styles.projectLink}>
-          <div className={styles.projectCard}>
-            <img src={project.thumbnail} alt={project.title} className={styles.projectThumbnail} />
-            <div className={styles.projectDetails}>
-              <h2 className={styles.projectTitle}>{project.title}</h2>
-            </div>
-          </div>
-        </Link>
-      );
-    })
-  ) : (
-    <p className={styles.noProjects}>More projects are being added!</p>
-  )}
-</div>
-
       </div>
     </main>
   );

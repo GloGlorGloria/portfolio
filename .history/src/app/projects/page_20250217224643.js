@@ -44,7 +44,7 @@ export default function Projects() {
         <div className={styles.grid}>
   {filteredProjects.length > 0 ? (
     filteredProjects.map((project) => {
-      const isComingSoon = ["weconnect", "fitquest", "wordpress", "minigame"].includes(project.id);
+      const isComingSoon = ["weconnect", "fitquest", "wordpress"].includes(project.id);
 
       return isComingSoon ? (
         // If project is "coming soon", disable the link and show only the div

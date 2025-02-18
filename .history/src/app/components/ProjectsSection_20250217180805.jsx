@@ -1,9 +1,6 @@
 "use client";
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import { GoArrowUpRight } from "react-icons/go";
-import Link from 'next/link';
-import styles from './ProjectsSection.module.css';
 
 const projectsData = [
     {
@@ -51,7 +48,7 @@ const projectsData = [
 const ProjectsSection = () => {
   return (
     <>
-    <h2 className="text-center text-4xl font-bold mt-16 mb-8">
+    <h2 className="text-center text-4xl font-bold mt-4 mb-8">
         Featured Projects
     </h2>
     <div className="grid xl:grid-cols-2 md:grid-cols-2 gap-12 md:gap-8">
@@ -62,12 +59,6 @@ const ProjectsSection = () => {
             description={project.description}
             imgUrl={project.image}
             projUrl={project.projUrl}/>)}
-    </div>
-
-    <div className={styles.nextProject}>
-          <Link href="/projects" passHref>
-              <button className={styles.nextButton}>All Projects<GoArrowUpRight className={`${styles.nextArrow}`}/></button>
-          </Link> 
     </div>
     </>
   )

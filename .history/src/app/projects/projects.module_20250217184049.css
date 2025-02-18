@@ -1,0 +1,131 @@
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #fff1df;
+  padding: 2rem;
+}
+
+.project__card {
+  height: 100%;
+  width: 100%;
+  background-color: var(--accent);
+  color: var(--background);
+  box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project__card:hover {
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--accent-hover);
+  transform: translateY(-5px);
+}
+
+.container {
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+  max-width: 100%; 
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Responsive Grid */
+.grid {
+  display: grid;
+  width: 100%;
+  gap: 1.5rem;
+
+  /* Default: Mobile */
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* Tablet View */
+@media screen and (min-width: 768px) {  
+  .grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+      padding: 1.5rem;
+  }
+  .title {
+      font-size: 2rem;
+  }
+}
+
+/* ✅ NEW: From 1024px to 1379px → Set to 2 Columns */
+@media screen and (min-width: 1024px) and (max-width: 1379px) {  
+  .grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+      max-width: 1200px;  
+  }
+}
+
+@media screen and (min-width: 1380px) {  
+  .grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .container {
+      max-width: 1400px;
+  }
+}
+
+.project-card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--accent-hover);
+  transform: translateY(-8px) scale(1.05);
+}
+
+/* Image Styling */
+.project-thumbnail {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Project Details */
+.project-details {
+  padding: 1rem;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Mobile Optimizations */
+@media screen and (max-width: 768px) {  
+  .grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .container {
+      padding: 1rem;
+  }
+  .title {
+      font-size: 1.5rem;
+  }
+  .project-title {
+      font-size: 1rem;
+  }
+  .project-thumbnail {
+      height: 200px;
+  }
+}

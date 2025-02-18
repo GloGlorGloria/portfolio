@@ -1,0 +1,28 @@
+.nextButton{
+    padding:0.75rem 7.5rem;
+    border-radius: 9999px;
+    background: var(--gradient);
+    color:antiquewhite;
+    font-weight: 700;
+    font-size:1.2rem;
+    margin-top:3rem;
+    transition: background 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; 
+}
+
+.nextButton:hover{
+    filter: brightness(110%);
+}
+
+.nextArrow{
+  vertical-align: middle; 
+}
+
+.nextProject{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
