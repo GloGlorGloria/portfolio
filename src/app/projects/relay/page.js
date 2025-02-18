@@ -57,6 +57,12 @@ export default function Relay() {
     "/images/projects/relay/dev-blog.png",
   ];
 
+  const team  = [ 
+    "/images/projects/relay/meet-team.png",
+    "/images/projects/relay/team-photo.png",
+  ];
+
+
   return (
     <main className={styles.mainContainer}>
       <div className={styles.contentContainer}>
@@ -600,15 +606,7 @@ export default function Relay() {
             </div>
             {/* Left Column: Large Image */}
               <div className={styles.rightColumn}>
-                <Image
-                    src="/images/projects/relay/meet-team.png"
-                    alt="Relay presents at the Annual Student Innovation Design & Technology Showcase"
-                    width={1200}
-                    height={800}
-                    className={styles.largeImage}
-                    style={{ cursor: "pointer" }}
-                    onClick={() => setSelectedImage("/images/projects/relay/meet-team.png")}
-                  />
+                <ImageCarousel className={styles.largeImage} images={team} /> 
               </div>
             </div>
         </section>
