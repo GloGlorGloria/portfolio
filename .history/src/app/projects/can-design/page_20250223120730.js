@@ -22,7 +22,7 @@ export default function f1Poster() {
 
   const buttonClasses = {
     "Green-Tea": styles.greenTea,
-    "Black-Tea": styles.darkTea,
+    "Dark-Tea": styles.darkTea,
     "White-Tea": styles.whiteTea,
   };
 
