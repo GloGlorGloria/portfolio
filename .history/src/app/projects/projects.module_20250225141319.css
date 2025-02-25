@@ -59,7 +59,7 @@
 }
 
 .projectCard {
-  height: 100%;
+  height: 120%;
   width: 100%;
   background-color: var(--accent);
   color: var(--background);

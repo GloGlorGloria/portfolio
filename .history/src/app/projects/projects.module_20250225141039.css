@@ -3,7 +3,7 @@
   min-height: 100vh;
   flex-direction: column;
   background-color: #fff1df;
-  align-items: center;
+  /* max-width: 1540px; */
 }
 
 .container {
@@ -60,7 +60,7 @@
 
 .projectCard {
   height: 100%;
-  width: 100%;
+  width: auto;
   background-color: var(--accent);
   color: var(--background);
   box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.1);

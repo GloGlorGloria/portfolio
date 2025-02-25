@@ -3,7 +3,9 @@
   min-height: 100vh;
   flex-direction: column;
   background-color: #fff1df;
+  /* max-width: 1540px; */
   align-items: center;
+  margin: 0 auto;
 }
 
 .container {

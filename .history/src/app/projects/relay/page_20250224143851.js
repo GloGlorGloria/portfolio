@@ -89,8 +89,6 @@ export default function Relay() {
                 height={800}
                 className={styles.largeVideo}
                 controls
-                autoPlay
-                muted
                 style={{ cursor: "pointer" }}
             />
               {/* <Image

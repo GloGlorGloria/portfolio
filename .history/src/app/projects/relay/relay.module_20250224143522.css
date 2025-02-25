@@ -291,7 +291,8 @@
   }
   
   .link {
-
+      text-decoration: underline;
+      text-underline-offset: 2px;
       color: var(--accent);
       font-style:italic;
     }
@@ -299,7 +300,7 @@
   .link:hover{
     color: var(--accent);
     text-decoration: underline var(--accent);
-
+    text-decoration: none;
   }
 
   .colorImage{

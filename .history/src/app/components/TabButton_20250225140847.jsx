@@ -8,7 +8,7 @@ const buttonClasses = active ? `${styles.about__span} ${styles.active}` : styles
   return (
     <div>
       <button onClick={selectTab}>
-        <p className={`mr-3 font-semibold text-xl hover:text-black ${buttonClasses}`}>
+        <p className={`mr-3 font-semibold text-2xl hover:text-black ${buttonClasses}`}>
             {children}
         </p>
       </button>
