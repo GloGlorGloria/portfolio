@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+:root {
+  padding: 0 160px;
+  --background: #fff1df;
+  --foreground: #171717;
+  --primary:#1f2456;
+  --secondary:#e24a4a;
+  --secondary-hover:#f47373;
+  --accent: #F8951D;
+  --tertiary:#cdc6fe;
+  --accent-hover: #f8a827;
+  --gradient: linear-gradient(30deg, rgb(233, 7, 7) 12%, rgb(236, 99, 2) 48%, rgb(222, 0, 78) 68%, rgb(29, 5, 124) 103%);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5); 
+  width: 30px !important; 
+  height: 35px !important;
+  min-width: 30px;
+  min-height: 30px;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+  position: absolute;
+  outline: 0;
+  border: none;
+}
+
+.swiper-button-prev {
+  left: 0 !important; 
+}
+
+.swiper-button-next {
+  right: 0 !important; 
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important; 
+  color: #ffffff !important; 
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.5) !important; 
+  width: 10px;
+  height: 10px;
+  opacity: 1 !important;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--accent) !important;
+}
+
+@media screen and (max-width: 1024px){
+  :root {
+    padding: 0 32px;
+  }
+  
+}
+
+@media screen and (max-width: 768px){
+  :root {
+    padding: 0 16px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  :root {
+    padding: 0 8px;
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fff1df;
+    --foreground: #ededed;
+  }
+} */
+
+h1{
+  font-family: 'EB Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+h2{  
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+h3{
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Nunito', sans-serif;
+}
+
+svg{
+  display: inline-block;
+  height:auto;
+  width:1.5rem;
+}

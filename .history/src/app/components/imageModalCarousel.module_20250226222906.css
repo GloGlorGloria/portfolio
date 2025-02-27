@@ -1,0 +1,31 @@
+.modalContent {
+    position: relative;
+    width: auto;  /* Prevent it from being too wide */
+    max-width: 90vw; /* Limit width */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fullImage {
+    width: 100%;
+    max-width: 90vw; /* Make it wider */
+    max-height: 90vh; /* Limit height */
+    object-fit: contain;
+}
+
+.closeButton {
+    position: fixed; /* Make it relative to the viewport */
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1100; /* Ensure it is above everything */
+}
