@@ -56,6 +56,13 @@
     height: auto;
   }
 
+  .mediumImage {
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
   .largeImage {
     width: 100%;
     height: auto;
@@ -70,7 +77,6 @@
 
   .rightColumn {
     max-width: 100%;
-
   }
   
   .infoTitle {
@@ -132,6 +138,13 @@
   width:40px;
   height:40px;
 }
+
+.fullPosters{
+  display:flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin:5rem 0;
+}
   
   /* Additional project images */
   .additionalImages {
@@ -148,10 +161,19 @@
   }
 
   .additionalImages{
+    width:100%;
+    height:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap:2rem;
+  }
+
+  
+  .additionalImages img {
+    max-width: 90%; /* Adjusts width dynamically */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 80vh; /* Prevents overflow */
   }
 
   .projectImage_Special{

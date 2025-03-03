@@ -15,9 +15,9 @@ export default function f1Poster() {
   const [selectedDieline, setSelectedDieline] = useState("Green-Tea");
 
   const dielineImages = {
-    "Green-Tea": "/images/projects/cans/Green-Tea.svg",
-    "Black-Tea": "/images/projects/cans/Dark-Tea.svg",
-    "White-Tea": "/images/projects/cans/White-Tea.svg",
+    "Green-Tea": "/images/projects/cans/green-dieline.png",
+    "Black-Tea": "/images/projects/cans/black-dieline.png",
+    "White-Tea": "/images/projects/cans/white-dieline.png",
   };
 
   const buttonClasses = {

@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Projects() {
   const projects = [
     { id: "relay", title: "Mobile App Development — Relay", category: ["UX/UI Design", "Development"], thumbnail: "/images/projects/relay/relay-thumbnail.png" },
-    { id: "weconnect", title: "Web App Development — WeConnect", category: ["UX/UI Design"], thumbnail: "/images/projects/weconnect/weconnect-thumbnail.png" },
+    { id: "weconnect", title: "Web App Design — WeConnect", category: ["UX/UI Design"], thumbnail: "/images/projects/weconnect/weconnect-thumbnail.png" },
     { id: "fitquest", title: "Web App Development — FitQuest", category: ["UX/UI Design", "Development"], thumbnail: "/images/projects/fitquest/fitquest-thumbnail.png" },
     { id: "e-magazine", title: "Print & E-Magazine", category: ["Graphic Design"], thumbnail: "/images/projects/magazine/magazine_thumbnail.png" },
     { id: "can-design", title: "Can Packaging Design", category: ["Graphic Design"], thumbnail: "/images/projects/cans/3-cans-bg-yellow.png" },
@@ -44,7 +44,7 @@ export default function Projects() {
         <div className={styles.grid}>
   {filteredProjects.length > 0 ? (
     filteredProjects.map((project) => {
-      const isComingSoon = ["weconnect", "fitquest", "wordpress", "minigame"].includes(project.id);
+      const isComingSoon = ["weconnect","fitquest", "wordpress", "minigame"].includes(project.id);
 
       return isComingSoon ? (
         <div key={project.id} className={`${styles.projectCard} ${styles.specialHover}`}>

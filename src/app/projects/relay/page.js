@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "./relay.module.css";
 import Link from "next/link";
 import ImageModal from "@/app/components/ImageModal";
-import ImageCarousel from "@/app/components/ImageCarousel";
 import ImageCarouselModal from "@/app/components/imageModalCarousel";
 import { FaCirclePlay, FaWordpress, FaAnglesDown, FaRoute, FaPeopleRoof} from "react-icons/fa6";
 import { PiFigmaLogoDuotone, PiFileMagnifyingGlassFill } from "react-icons/pi";
