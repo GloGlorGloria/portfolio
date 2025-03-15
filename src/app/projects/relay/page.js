@@ -200,7 +200,7 @@ export default function Relay() {
               </div>
               <div>
                 <h3 className="mb-2">Solution</h3>
-                <p className={styles.projectSummary}>Relay is an <span className="font-bold">AI-powered</span> ridesharing platform that connects parents within trusted communities, simplifying transportation with smart route matching, live GPS tracking, and real-time ride updates.</p>
+                <p className={styles.projectSummary}>Relay is an <span className="font-bold text-primary">AI-powered</span> ridesharing platform that connects parents within trusted communities, simplifying transportation with smart route matching, live GPS tracking, and real-time ride updates.</p>
               </div>
             </div>
           </div>
@@ -239,14 +239,14 @@ export default function Relay() {
                 </div>
                 <div>
                   <ul>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Scheduling conflicts</span> — 75% of parents struggle to arrange transportation due to conflicting schedules, and 67% report that transportation issues have disrupted their children’s participation in activities.</li>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Safety concerns</span> —100% of parents agree that GPS tracking is essential, and 83% prefer private groups to organize carpools within trusted networks.</li>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Rideshare demand</span> — 75% of parents struggle to arrange transportation due to conflicting schedules, and 67% report that transportation issues have disrupted their children’s participation in activities.</li>
+                    <li className={styles.numberList}><span className="font-bold text-primary">Scheduling conflicts</span> — 75% of parents struggle to arrange transportation due to conflicting schedules, and 67% report that transportation issues have disrupted their children’s participation in activities.</li>
+                    <li className={styles.numberList}><span className="font-bold text-primary">Safety concerns</span> —100% of parents agree that GPS tracking is essential, and 83% prefer private groups to organize carpools within trusted networks.</li>
+                    <li className={styles.numberList}><span className="font-bold text-primary">Rideshare demand</span> — 75% of parents struggle to arrange transportation due to conflicting schedules, and 67% report that transportation issues have disrupted their children’s participation in activities.</li>
                   </ul>
                 </div>
                 <div>
                   <p className={styles.projectSummary}>
-                    These insights shaped a solution prioritizing <span className="font-bold">safety, convenience,</span> and <span className="font-bold">trusted connections</span>. Learn more from the <span></span>
+                    These insights shaped a solution prioritizing <span className="font-bold text-primary">safety, convenience,</span> and <span className="font-bold text-primary">trusted connections</span>. Learn more from the <span></span>
                     <Link
                     href="https://drive.google.com/file/d/1AFnJPVDrIHCMcRFgdjcG65a-SkyHVtI9/view?usp=sharing"
                     target="_blank"
@@ -273,11 +273,11 @@ export default function Relay() {
             <h1 className={styles.sectionTitle}>Competitive Analysis <PiFileMagnifyingGlassFill className={styles.designIcon}/></h1>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
-                    A competitive analysis was conducted to evaluate how Relay compares to other ride-sharing platforms. Since <span className="font-bold text-secondary">no direct competitors were found in Canada</span>, the research focused on U.S.-based platforms and indirect competitors, such as general ride-sharing apps not specifically designed for kids. This helped identify key opportunities for Relay to stand out in the market.
+                    A competitive analysis was conducted to evaluate how Relay compares to other ride-sharing platforms. Since <span className="font-bold text-primary">no direct competitors were found in Canada</span>, the research focused on U.S.-based platforms and indirect competitors, such as general ride-sharing apps not specifically designed for kids. This helped identify key opportunities for Relay to stand out in the market.
                   </p>
                   <br></br>
                   <p className={styles.projectSummary}>
-                    The analysis highlights Relay’s unique position as an all-in-one platform that combines ride scheduling, in-app communication, real-time GPS tracking, and AI-powered ride notifications. Its focus on <span className="font-bold text-secondary">community-driven connections</span> through public and private group channels further sets it apart. By assessing competitors' <span></span>
+                    The analysis highlights Relay’s unique position as an all-in-one platform that combines ride scheduling, in-app communication, real-time GPS tracking, and AI-powered ride notifications. Its focus on <span className="font-bold text-primary">community-driven connections</span> through public and private group channels further sets it apart. By assessing competitors' <span></span>
                     <Link
                       href="https://relay.arspera.com/2024/10/03/relay-vs-the-competition-how-we-stand-out/"
                       target="_blank"
@@ -341,7 +341,7 @@ export default function Relay() {
                   <br></br>
                   <ul>
                     <li className={styles.numberList}><span className="font-bold text-primary">Meet Joseph</span>, a full-time software engineer and father of a 10-year-old son, struggles to arrange reliable rides due to his demanding schedule. He values a tech-driven ridesharing solution with GPS tracking and reliable network. </li>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Meet Sarah</span>, a part-time climate policy advisor, enjoys helping her community by giving kids rides but finds it hard to coordinate with busy parents. She seeks a platform that simplifies scheduling, enhances communication, and builds connection. </li>
+                    <li className={styles.numberList}><span className="font-bold  text-orange-500">Meet Sarah</span>, a part-time climate policy advisor, enjoys helping her community by giving kids rides but finds it hard to coordinate with busy parents. She seeks a platform that simplifies scheduling, enhances communication, and builds connection. </li>
                   </ul>
                   <p className={styles.projectSummary}>These personas guided app development by representing real users' needs, behaviors, and challenges, ensuring the design and features effectively meet user expectations.</p>
                 </div>   
@@ -362,7 +362,7 @@ export default function Relay() {
                   <p className={styles.projectSummary}>
                   An app workflow and user story map were created to visualize the user journey, streamline navigation, and prioritize features within a tight timeline. The workflow offered a structured framework for intuitive interactions, ensuring both designers and developers had a clear understanding of the app's flow. </p>
                   <br></br>
-                  <p className={styles.projectSummary}>The user story map helped break down user needs, identify dependencies, and define the <span className="text-secondary font-bold">Minimum Viable Product (MVP)</span>. These tools played a key role in ensuring a seamless user experience, improving team alignment, and optimizing development efficiency.</p>
+                  <p className={styles.projectSummary}>The user story map helped break down user needs, identify dependencies, and define the <span className="font-bold text-primary">Minimum Viable Product (MVP)</span>. These tools played a key role in ensuring a seamless user experience, improving team alignment, and optimizing development efficiency.</p>
                 </div>
               </div>
             </div>
@@ -411,7 +411,7 @@ export default function Relay() {
                   <p className={styles.projectSummary}>
                   Rounded buttons and typography create a welcoming, modern, and easy-to-read interface. They enhance approachability, ensure easy tapping, and build trust among parents, aligning with the app’s focus on connection. </p>
                   <br></br>
-                  <p className={styles.projectSummary}>The branding colors, a mix of <span className="font-bold text-accent">orange</span> and <span className="font-bold text-secondary">red</span>, reinforce warmth and trust, supporting a safe, community-driven environment. The logo integrates key elements of radar, a car side mirror, and eco-friendly symbolism to represent connectivity and sustainability within the Relay brand.</p>
+                  <p className={styles.projectSummary}>The branding colors, a mix of <span className="font-bold">orange</span> and <span className="font-bold">red</span>, reinforce warmth and trust, supporting a safe, community-driven environment. The logo integrates key elements of radar, a car side mirror, and eco-friendly symbolism to represent connectivity and sustainability within the Relay brand.</p>
                 </div>
               </div>
               </div>
@@ -429,10 +429,10 @@ export default function Relay() {
             <h2 className={styles.sectionTitle}>1. Smart Route Matching <FaRoute className={styles.designIcon__small}/> </h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
-                  Relay's Smart Route Matching streamlines carpooling by <span className="font-bold text-secondary">automatically suggesting ride matches </span>based on similar routes and times. Previously, parents had to manually coordinate schedules with other individuals, but with Relay, the process becomes effortless with just a few taps.
+                  Relay's Smart Route Matching streamlines carpooling by <span className="font-bold text-primary">automatically suggesting ride matches </span>based on similar routes and times. Previously, parents had to manually coordinate schedules with other individuals, but with Relay, the process becomes effortless with just a few taps.
                   </p>
                   <br></br>
-                  <p className={styles.projectSummary}> The app also <span className="font-bold text-secondary">estimates ride time changes</span> based on different matches, allowing parents to quickly form carpools with others heading to the same destination based on their preferences. This not only saves time but also makes kids transportation more efficient, easing the load for parents.</p>
+                  <p className={styles.projectSummary}> The app also <span className="font-bold text-primary">estimates ride time changes</span> based on different matches, allowing parents to quickly form carpools with others heading to the same destination based on their preferences. This not only saves time but also makes kids transportation more efficient, easing the load for parents.</p>
                 </div>        
             </div>
             {/* Left Column: Large Image */}
@@ -455,9 +455,9 @@ export default function Relay() {
                   </p>
                   <br></br>
                   <ul>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Real-Time GPS Tracking </span>— Parents can track their child’s ride from start to finish, ensuring peace of mind.</li>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">AI-Powered Ride Notifications </span>— Timely updates on ride progress and arrival times keep parents informed, making them feel as if they’re riding along.</li>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Unique Ride PIN </span>— A secure, trip-specific PIN ensures kids enter the correct car, adding an extra layer of protection.</li>
+                    <li className={styles.numberList}><span className="font-bold text-orange-500">Real-Time GPS Tracking </span>— Parents can track their child’s ride from start to finish, ensuring peace of mind.</li>
+                    <li className={styles.numberList}><span className="font-bold  text-orange-500">AI-Powered Ride Notifications </span>— Timely updates on ride progress and arrival times keep parents informed, making them feel as if they’re riding along.</li>
+                    <li className={styles.numberList}><span className="font-bold  text-orange-500">Unique Ride PIN </span>— A secure, trip-specific PIN ensures kids enter the correct car, adding an extra layer of protection.</li>
                   </ul>
                   <p className={styles.projectSummary}>By leveraging technology, Relay not only addresses common ridesharing concerns but also empowers parents to manage their children’s transportation with ease and confidence.
                   </p>
@@ -479,13 +479,13 @@ export default function Relay() {
             <h2 className={styles.sectionTitle}>3. Connect with trusted community <FaPeopleRoof className={styles.designIcon__small}/></h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
-                  No parent would hand their child off to a stranger—that’s why Relay builds a trusted community. Instead of random drivers, parents connect with others from the <span className="font-bold text-secondary">same school or activity group</span> to share the driving load. Every parent we surveyed preferred ridesharing with familiar faces!
+                  No parent would hand their child off to a stranger—that’s why Relay builds a trusted community. Instead of random drivers, parents connect with others from the <span className="font-bold text-primary">same school or activity group</span> to share the driving load. Every parent we surveyed preferred ridesharing with familiar faces!
                   </p>
                   <br></br>
-                  <p className={styles.projectSummary}>To ensure security, identity verification is required to join school groups, confirming all members have children at the same school. Parents can also <span className="font-bold text-secondary">create private groups</span> with their trusted network, using in-app messaging and coordination tools for seamless rideshare planning. 
+                  <p className={styles.projectSummary}>To ensure security, identity verification is required to join school groups, confirming all members have children at the same school. Parents can also <span className="font-bold text-primary">create private groups</span> with their trusted network, using in-app messaging and coordination tools for seamless rideshare planning. 
                   </p>
                   <br></br>
-                  <p className={styles.projectSummary}>Beyond convenience, ridesharing strengthens connections, helping both parents and kids <span className="font-bold text-secondary">build closer relationships</span> within their community.</p>
+                  <p className={styles.projectSummary}>Beyond convenience, ridesharing strengthens connections, helping both parents and kids <span className="font-bold text-primary">build closer relationships</span> within their community.</p>
                 </div>        
             </div>
             {/* Left Column: Large Image */}
@@ -581,10 +581,10 @@ export default function Relay() {
             <h1 className={styles.sectionTitle}>Promotional Video<FaVideo className={styles.designIcon}/></h1>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
-                  The promotional video takes a storytelling approach, highlighting the real-life challenges parents face with transportation. It showcases how Relay simplifies carpooling and fosters a stronger community, emphasizing the app’s benefits and its positive impact on daily life. By focusing on the emotional connection between parents and children, the video aims to resonate with viewers, encouraging them to try Relay and experience the difference.
+                  The promotional video takes a <span className="font-bold text-primary">storytelling approach</span>, highlighting the real-life challenges parents face with transportation. It showcases how Relay simplifies carpooling and fosters a stronger community, emphasizing the app’s benefits and its positive impact on daily life. By focusing on the <span className="font-bold text-primary">emotional connection</span> between parents and children, the video aims to resonate with viewers, encouraging them to try Relay and experience the difference.
                   </p>
                   <br></br>
-                  <p className={styles.projectSummary}>Special thanks to the team for their hard work and to the amazing young actors for bringing the story to life!</p>
+                  <p className={styles.projectSummary}>This project would not have been possible without the team's hard work. Thank you to the team and the amazing young actors for bringing the story to life!</p>
                 </div>        
             </div>
             {/* Left Column: Large Image */}
@@ -658,10 +658,10 @@ export default function Relay() {
                 <h1 className={styles.sectionTitle}>Unforgettable Journey<IoHappy className={styles.designIcon}/></h1>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
-                    Originally, the team envisioned a broad ridesharing solution focused on eco-friendliness and resource sharing. However, after in-depth research and considering a tight timeline, the focus shifted to the specific challenges faced by working parents. It also became clear that parents were <span className="font-bold text-secondary">hesitant to use ridesharing</span> for their children without robust safety measures, so the concept was refined to emphasize safety and trust. </p>
+                    Originally, the team envisioned a broad ridesharing solution focused on eco-friendliness and resource sharing. However, after in-depth research and considering a tight timeline, the focus shifted to the specific challenges faced by working parents. It also became clear that parents were <span className="font-bold text-primary">hesitant to use ridesharing</span> for their children without robust safety measures, so the concept was refined to emphasize safety and trust. </p>
                   <br></br>
                   <p className={styles.projectSummary}>
-                    Building Relay presented significant challenges. The app <span className="font-bold text-secondary">required dynamic accounts for both parents and drivers</span>, a <span className="font-bold text-secondary">user-friendly yet advanced interface</span>, and features such as smart route matching, AI ride notifications, and GPS live tracking. Overcoming these obstacles not only took extra time but also confirmed Relay's potential to make a real difference. Special thanks to everyone for their hard work and dedication in bringing Relay to life!</p>
+                    Building Relay presented significant challenges. The app <span className="font-bold text-primary">required dynamic accounts for both parents and drivers</span>, a <span className="font-bold text-primary">user-friendly yet advanced interface</span>, and features such as smart route matching, AI ride notifications, and GPS live tracking. Overcoming these obstacles not only took extra time but also confirmed Relay's potential to make a real difference. Special thanks to everyone for their hard work and dedication in bringing Relay to life!</p>
                     <br></br>
                   <p className={styles.projectSummary}>Meet the <span></span>
                   <Link
