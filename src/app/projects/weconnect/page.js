@@ -84,7 +84,7 @@ export default function Relay() {
             <div className={styles.leftColumn}>
             <h3 className="font-semi-bold text-lg">App Demo</h3>
             <video
-                src="/videos/relay/Demo.mp4"
+                src="/videos/weconnect/weconnect-Demo.mp4"
                 width={1200}
                 height={800}
                 className={styles.largeVideo}
@@ -109,14 +109,7 @@ export default function Relay() {
               <div className={styles.sections}>
                 <h2 className={styles.infoTitle}>Summary</h2>
                 <p className={`${styles.projectSummary} ${styles.textJustify}`}>
-                Relay is <span className={styles.projectName}> Canada’s first ridesharing app for parents</span>,  enabling safe and reliable carpooling for kids within trusted networks. Built by a team of 8 UX/UI designers and full-stack developers, the team identified key challenges and created an <span className={styles.projectName}> AI-powered solution </span>to ease transportation burdens and foster social connections. 
-                Recognized for its innovation and market potential, Relay won <span></span>
-                <Link
-                    href="https://www.linkedin.com/feed/update/urn:li:activity:7272008089032101888/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${styles.projectName} ${styles.link}`}
-                  >1st place</Link> at the Annual Student Innovation Design & Technology Showcase.
+                  WeConnect is an <span className="font-bold text-primary">instant translation video conferencing</span> web app tackling communication barriers in Canada’s multicultural environment. Designed by a team of 4 UX/UI designers, it evolved from user research into an intuitive interface, refined through usability testing. A comprehensive <span className="font-bold text-primary">style guide and asset inventory</span> ensured a smooth developer handoff for seamless implementation.
                 </p>
               </div>
               <div className={styles.sections}>
@@ -131,55 +124,43 @@ export default function Relay() {
                 <h2 className={styles.infoTitle}>Timeline</h2>
                 <ul className={styles.skillsList}>
                   <li>
-                    September — December 2024
+                    January — April 2024
                   </li>
                 </ul>
               </div>
               <div className={styles.sections}>
                 <h2 className={styles.infoTitle}>Key Skills</h2>
                 <ul className={styles.skillsList}>
-                  <li className={styles.skillsItem}>Project Management</li>
                   <li className={styles.skillsItem}>User Research</li>
                   <li className={styles.skillsItem}>UX/UI Design</li>
-                  <li className={styles.skillsItem}>Branding</li>
+                  <li className={styles.skillsItem}>Usability Testing</li>
+                  <li className={styles.skillsItem}>GUI Assets</li>
                 </ul>
               </div>
               <div className="flex flex-row gap-5">
+                
                 <div className={styles.viewOnline}>
                   <Link
-                    href="https://relay.arspera.com/"
+                    href="https://www.figma.com/proto/kN07zJ5cofQ4vPYbEkQmHU/WeConnect-%E2%80%94-Instant-translation-app-for-team-meetings?page-id=435%3A4674&node-id=907-38911&viewport=584%2C529%2C0.07&t=6vn6zHrRSXoljam9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=907%3A38911&show-proto-sidebar=1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.button__right}
                   >
                   <span 
                     className="bg-[#fff0df] hover:text-orange-500 rounded-full px-3.5 py-1.5" 
-                  > Dev Blog <FaWordpress className={styles.goArrow}/> </span>
+                  > Prototype <PiFigmaLogoDuotone className={styles.goArrow}/> </span>
                   </Link>
                 </div>
                 <div className={styles.viewOnline}>
                   <Link
-                    href="https://www.figma.com/design/vg0dYyo98bFlOun13uUW7q/Relay-%E2%80%94-Ridesharing-app-for-parents?node-id=0-1&t=RZp3o2aDpcLh3tMA-1"
+                    href="https://weconnect.zenowong.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.button__right}
                   >
                   <span 
                     className="bg-[#fff0df] hover:text-orange-500 rounded-full px-3.5 py-1.5" 
-                  > Wireframes <PiFigmaLogoDuotone className={styles.goArrow}/> </span>
-                  </Link>
-                </div>
-                <div className={styles.viewOnline}>
-                  <Link
-                      href="https://youtu.be/VuBZm-PotTE?si=w5s4fQ2aOu3z2EX1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={styles.button__right}
-                    >
-                    <span 
-                      className="bg-[#fff0df] hover:text-orange-500 rounded-full px-3.5 py-1.5" 
-                    > Promo Video <FaCirclePlay className={styles.goArrow}/> </span>
-                    {/* Try it out! <GoArrowUpRight className={`${styles.goArrow}`}/> */}
+                  > Promo Site <FaWordpress className={styles.goArrow}/> </span>
                   </Link>
                 </div>
               </div>
@@ -196,11 +177,11 @@ export default function Relay() {
             <div className={styles.overviewDetails}>
               <div>
                 <h3 className="mb-2">Pain Point</h3>
-                <p className={styles.projectSummary}>With 75% of Canadian families with children aged 6–12 having two working parents, the same percentage struggle to balance work and their kids’ transportation needs due to limited reliable options.</p>
+                <p className={styles.projectSummary}>Canada is a multilingual country where people frequently collaborate across different languages. However, 44% of survey respondents <span className="font-bold">struggle with language barriers</span> during video calls. Popular platforms lock transcription behind paywalls and have a steep learning curve, limiting accessibility.</p>
               </div>
               <div>
                 <h3 className="mb-2">Solution</h3>
-                <p className={styles.projectSummary}>Relay is an <span className="font-bold">AI-powered</span> ridesharing platform that connects parents within trusted communities, simplifying transportation with smart route matching, live GPS tracking, and real-time ride updates.</p>
+                <p className={styles.projectSummary}>WeConnect offers a modern and user-friendly design with instant translation and collaborative tools, boosting productivity and reducing language misunderstandings.</p>
               </div>
             </div>
           </div>
@@ -210,7 +191,7 @@ export default function Relay() {
         <section className={styles.sectionContainer}>
           <div>
             <h2 className={styles.takeAway}>Key Takeaway</h2>
-            <p className={styles.quotes}> <span className={styles.quotation}>"</span>Great design starts with listening—deeper insights drive impactful solutions that truly help.<span className={styles.quotation}>"</span></p>
+            <p className={styles.quotes}> <span className={styles.quotation}>"</span>Creating a well-organized, detailed asset inventory and maintaining clear communication are key to ensuring a seamless handover to developers.<span className={styles.quotation}>"</span></p>
           </div>
         </section>
 
