@@ -248,12 +248,22 @@
  animation: bounce 1.5s infinite ease-in-out;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
 .exploreArrow{
  color: var(--primary);
  width: 2rem;
  height:auto;
  margin-bottom: 1rem;
- margin-left:1rem;
+ margin-right:1rem;
+ animation: bounce 1.5s infinite ease-in-out;
 }
 
 .designIcon{

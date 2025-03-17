@@ -465,7 +465,11 @@ export default function Relay() {
                   > Wireframes <PiFigmaLogoDuotone className={styles.goArrow}/> </span>
                   </Link>
         </div>
-        
+
+        <div>
+              <FaAnglesDown  className={styles.downArrow}/>
+        </div>
+
         <div className={styles.nextProject}>
           <Link href="/projects/e-magazine" passHref>
               <button className={styles.nextButton}>Next Project<FaHandPointRight className={`${styles.nextArrow}`}/></button>

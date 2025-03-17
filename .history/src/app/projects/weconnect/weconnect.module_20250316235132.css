@@ -248,12 +248,26 @@
  animation: bounce 1.5s infinite ease-in-out;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
 .exploreArrow{
+ text-align: center;
  color: var(--primary);
  width: 2rem;
  height:auto;
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
  margin-bottom: 1rem;
- margin-left:1rem;
+ animation: bounce 1.5s infinite ease-in-out;
 }
 
 .designIcon{

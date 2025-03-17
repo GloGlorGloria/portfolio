@@ -444,7 +444,7 @@ export default function Relay() {
 
         <div className={`${styles.viewOnline} ${styles.viewOnline__container}`} >
                   <Link
-                    href="https://www.figma.com/proto/kN07zJ5cofQ4vPYbEkQmHU/WeConnect-%E2%80%94-Instant-translation-app-for-team-meetings?page-id=435%3A4674&node-id=907-38911&viewport=584%2C529%2C0.07&t=6vn6zHrRSXoljam9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=907%3A38911&show-proto-sidebar=1"
+                    href="https://www.youtube.com/watch?v=NxCmZUCoi6U&t=10s&ab_channel=GloGlorGloria"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`${styles.button__right} ${styles.large_button}`} 
@@ -455,7 +455,7 @@ export default function Relay() {
                   </Link>
               
                   <Link
-                    href="https://www.figma.com/design/TiCeTfzkb5qknBkhFhYRGB/WeConnect-%E2%80%94-Instant-Translation-Video-Conferencing?node-id=435-4674&t=TtgiY5qGNcQbcii8-1"
+                    href="https://www.figma.com/design/vg0dYyo98bFlOun13uUW7q/Relay-%E2%80%94-Ridesharing-app-for-parents?node-id=0-1&t=RZp3o2aDpcLh3tMA-1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`${styles.button__right} ${styles.large_button}`} 
@@ -465,7 +465,11 @@ export default function Relay() {
                   > Wireframes <PiFigmaLogoDuotone className={styles.goArrow}/> </span>
                   </Link>
         </div>
-        
+
+        <div>
+              <FaAnglesDown  className={styles.downArrow}/>
+        </div>
+
         <div className={styles.nextProject}>
           <Link href="/projects/e-magazine" passHref>
               <button className={styles.nextButton}>Next Project<FaHandPointRight className={`${styles.nextArrow}`}/></button>

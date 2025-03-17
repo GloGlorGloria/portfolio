@@ -248,14 +248,6 @@
  animation: bounce 1.5s infinite ease-in-out;
 }
 
-.exploreArrow{
- color: var(--primary);
- width: 2rem;
- height:auto;
- margin-bottom: 1rem;
- margin-left:1rem;
-}
-
 .designIcon{
   width: 2.3rem;
   height: auto;

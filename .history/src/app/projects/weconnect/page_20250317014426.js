@@ -5,15 +5,15 @@ import styles from "./weconnect.module.css";
 import Link from "next/link";
 import ImageModal from "@/app/components/ImageModal";
 import ImageCarouselModal from "@/app/components/ImageCarouselModal";
-import { FaWordpress, FaAnglesDown,} from "react-icons/fa6";
+import { FaCirclePlay, FaWordpress, FaAnglesDown, FaRoute, FaPeopleRoof} from "react-icons/fa6";
 import { PiFigmaLogoDuotone, PiArrowBendRightDownFill, PiVideoConferenceFill } from "react-icons/pi";
-import {  RiSurveyFill } from "react-icons/ri";
+import {  RiSurveyFill, RiPresentationFill } from "react-icons/ri";
 import { BiSolidUserDetail } from "react-icons/bi";
 import { BsTranslate, BsStars } from "react-icons/bs";
-import { FaToolbox, FaHandPointRight } from "react-icons/fa";
+import { FaToolbox, FaVideo, FaHandPointRight } from "react-icons/fa";
 import { LuWorkflow } from "react-icons/lu";
 import { IoIosColorPalette } from "react-icons/io";
-import { GoArrowUpRight } from "react-icons/go";
+import { IoHappy } from "react-icons/io5";
 import { MdInventory } from "react-icons/md";
 
 
@@ -25,6 +25,36 @@ export default function Relay() {
     "/images/projects/weconnect/weconnect-asset1.png",
     "/images/projects/weconnect/weconnect-asset2.png",
     "/images/projects/weconnect/weconnect-asset3.png",
+  ];
+
+  const safetyFeatures = [ 
+    "/images/projects/relay/relay-empower.png",
+    "/images/projects/relay/GPS-app.png",
+    "/images/projects/relay/AI-notifications.png",
+    "/images/projects/relay/AI-notes.png",
+    "/images/projects/relay/schedule.png",
+    "/images/projects/relay/GPS.png",
+  ];
+
+  const trustedCommunity  = [ 
+    "/images/projects/relay/relay-connect.png",
+    "/images/projects/relay/school-community.png",
+    "/images/projects/relay/private-group.png",
+    "/images/projects/relay/chatbox.png",
+  ];
+
+  const promotionItems  = [ 
+    "/images/projects/relay/promotion-items.png",
+    "/images/projects/relay/bcard-2.png",
+    "/images/projects/relay/brochure-p2.png",
+    "/images/projects/relay/instagram.png",
+    "/images/projects/relay/instagram-posts.png",
+    "/images/projects/relay/dev-blog.png",
+  ];
+
+  const team  = [ 
+    "/images/projects/relay/meet-team.png",
+    "/images/projects/relay/team-photo.png",
   ];
 
 
@@ -416,13 +446,11 @@ export default function Relay() {
                   <br></br>
                   <ul>
                     <li className={styles.numberList}><span className="font-bold text-secondary">Virtual Whiteboard</span> — Brainstorm visually, sketch ideas, and collaborate in real time for interactive discussions.</li>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Live Polls & Surveys</span> — Gather instant feedback, make quick decisions, and keep meetings dynamic.</li>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">Screen Sharing</span> — Present ideas, walk through documents, or provide live demonstrations effortlessly.</li>
-                    <li className={styles.numberList}><span className="font-bold text-secondary">File Sharing</span> — Instantly exchange important documents, images, and resources without switching between apps.</li>
                   </ul>
-                  <p className={styles.projectSummary}>
-                    By integrating these tools within a single platform, WeConnect eliminates the hassle of juggling multiple apps, streamlining teamwork and ensuring meetings stay interactive and efficient. 
+                  <p className={styles.projectSummary}>To ensure security, identity verification is required to join school groups, confirming all members have children at the same school. Parents can also <span className="font-bold text-secondary">create private groups</span> with their trusted network, using in-app messaging and coordination tools for seamless rideshare planning. 
                   </p>
+                  <br></br>
+                  <p className={styles.projectSummary}>Beyond convenience, ridesharing strengthens connections, helping both parents and kids <span className="font-bold text-secondary">build closer relationships</span> within their community.</p>
                 </div>        
             </div>
             {/* Left Column: Large Image */}
@@ -444,18 +472,19 @@ export default function Relay() {
 
         <div className={`${styles.viewOnline} ${styles.viewOnline__container}`} >
                   <Link
-                    href="https://www.figma.com/proto/kN07zJ5cofQ4vPYbEkQmHU/WeConnect-%E2%80%94-Instant-translation-app-for-team-meetings?page-id=435%3A4674&node-id=907-38911&viewport=584%2C529%2C0.07&t=6vn6zHrRSXoljam9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=907%3A38911&show-proto-sidebar=1"
+                    href="https://www.youtube.com/watch?v=NxCmZUCoi6U&t=10s&ab_channel=GloGlorGloria"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`${styles.button__right} ${styles.large_button}`} 
                   >
                   <span 
                     className="bg-[#fff0df] hover:text-orange-500 rounded-full px-3.5 py-1.5" 
-                  > Try it out <GoArrowUpRight className={`${styles.goArrow}`}/> </span>
+                  > App Demo  <FaCirclePlay className={styles.goArrow}/> </span>
+                  {/* Try it out! <GoArrowUpRight className={`${styles.goArrow}`}/> */}
                   </Link>
               
                   <Link
-                    href="https://www.figma.com/design/TiCeTfzkb5qknBkhFhYRGB/WeConnect-%E2%80%94-Instant-Translation-Video-Conferencing?node-id=435-4674&t=TtgiY5qGNcQbcii8-1"
+                    href="https://www.figma.com/design/vg0dYyo98bFlOun13uUW7q/Relay-%E2%80%94-Ridesharing-app-for-parents?node-id=0-1&t=RZp3o2aDpcLh3tMA-1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`${styles.button__right} ${styles.large_button}`} 
@@ -465,7 +494,91 @@ export default function Relay() {
                   > Wireframes <PiFigmaLogoDuotone className={styles.goArrow}/> </span>
                   </Link>
         </div>
-        
+
+        <div>
+              <FaAnglesDown  className={styles.downArrow}/>
+        </div>
+
+        {/* Marketing & Branding */}
+        <section className={styles.sectionContainer}>
+          <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
+            <div className={styles.leftColumn}>
+              <ImageCarouselModal className={styles.largeImage} images={promotionItems} /> 
+            </div>
+            {/* Left Column: Large Image */}
+              <div className={styles.rightColumn}>
+              <div className={styles.sections}>
+                <h1 className={styles.sectionTitle}>Marketing & Branding</h1>
+                <div className="mb-4">
+                  <p className={styles.projectSummary}>
+                  Bringing Relay to life goes beyond building the app. The team created a variety of promotional materials, including a <span></span>
+                  <Link
+                    href="https://relay.arspera.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${styles.projectName} ${styles.link}`}
+                  >landing page</Link>, brochures, name cards, stickers, and Instagram (
+                     <Link
+                    href="https://www.instagram.com/relay.rideshare/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${styles.projectName} ${styles.link}`}
+                  >@relay.rideshare</Link>) to strengthen marketing and branding. By maintaining consistent colors and typography, these materials ensure a cohesive identity.
+                  </p>
+                  <br></br>
+                  <p className={styles.projectSummary}>
+                    The Instagram account adopts an infographic style to visually explain the app’s concept and features in a clear, data-driven way, making it easy for parents to understand. This approach not only informs but also aims to resonate with our target audience, reinforcing Relay’s value in their daily lives.</p>
+                    <br></br>
+                  <p className={styles.projectSummary}>
+                  <Link
+                    href="https://relay.arspera.com/blog/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${styles.projectName} ${styles.link}`}
+                  >Development blogs</Link> further document the journey, keeping users engaged with updates.
+                  </p>
+                  <br></br>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div>
+              <FaAnglesDown  className={styles.downArrow}/>
+            </div>
+        </section>
+
+        {/* Promotional Video */}
+        <section className={styles.sectionContainer}>
+          <div className={`${styles.projectDetails} ${styles.casestudy__section}`}>
+            <div className={styles.leftColumn}>
+            <h1 className={styles.sectionTitle}>Promotional Video<FaVideo className={styles.designIcon}/></h1>
+                <div className="mb-4">
+                  <p className={styles.projectSummary}>
+                  The promotional video takes a storytelling approach, highlighting the real-life challenges parents face with transportation. It showcases how Relay simplifies carpooling and fosters a stronger community, emphasizing the app’s benefits and its positive impact on daily life. By focusing on the emotional connection between parents and children, the video aims to resonate with viewers, encouraging them to try Relay and experience the difference.
+                  </p>
+                  <br></br>
+                  <p className={styles.projectSummary}>Special thanks to the team for their hard work and to the amazing young actors for bringing the story to life!</p>
+                </div>        
+            </div>
+            {/* Left Column: Large Image */}
+              <div className={styles.rightColumn}>
+                <div className={styles.sections}>
+                  <video
+                  src="/videos/relay/promo-video-c.mp4"
+                  width={1200}
+                  height={800}
+                  className={styles.largeVideo}
+                  controls
+                  style={{ cursor: "pointer" }}
+                />
+                </div>
+              </div>
+            </div>
+            <div>
+              <FaAnglesDown  className={styles.downArrow}/>
+            </div>
+        </section>
+
         <div className={styles.nextProject}>
           <Link href="/projects/e-magazine" passHref>
               <button className={styles.nextButton}>Next Project<FaHandPointRight className={`${styles.nextArrow}`}/></button>
