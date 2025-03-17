@@ -330,7 +330,7 @@ export default function Relay() {
               </div>
               <iframe 
                 className={styles.figmaEmbed} 
-                src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/TiCeTfzkb5qknBkhFhYRGB/WeConnect-%E2%80%94-Instant-Translation-Video-Conferencing?node-id=50760-47724"
+                src="https://embed.figma.com/design/TiCeTfzkb5qknBkhFhYRGB/WeConnect-%E2%80%94-Instant-Translation-Video-Conferencing?node-id=50760-47724&embed-host=share" 
                 allowFullScreen
               ></iframe>
             </div>
@@ -347,11 +347,11 @@ export default function Relay() {
             <h2 className={styles.sectionTitle}>1. Video Conferencing <PiVideoConferenceFill className={styles.designIcon__small}/> </h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
-                    WeConnect's core feature is video conferencing, designed for seamless and effortless meeting creation to connect with others. <span className="font-bold  text-orange-500">Large action buttons</span> on the home page make it easy to start a meeting with a simple checkbox setup and invite participants via a shareable link. Scheduled meetings are displayed on the home screen for better planning. The interface also enables smooth screen-swiping to switch between different profile display modes. 
+                    WeConnect's core feature is video conferencing, designed for seamless and effortless meeting creation to connect with others. <span className="font-bold text-secondary">Large action buttons</span> on the home page make it easy to start a meeting with a simple checkbox setup and invite participants via a shareable link. Scheduled meetings are displayed on the home screen for better planning. The interface also enables smooth screen-swiping to switch between different profile display modes. 
                   </p>
                   <br></br>
                   <p className={styles.projectSummary}> 
-                    The platform also includes <span className="font-bold text-orange-500">in-app messaging</span> for real-time communication, enabling seamless collaboration before, during, and after meetings while keeping discussions centralized.
+                    The platform also includes <span className="font-bold text-secondary">in-app messaging</span> for real-time communication, enabling seamless collaboration before, during, and after meetings while keeping discussions centralized.
                   </p>
                 </div>        
             </div>
@@ -379,11 +379,11 @@ export default function Relay() {
             <h2 className={styles.sectionTitle}>2. Instant Translation <BsTranslate className={styles.designIcon__small}/></h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
-                   To break language barriers, WeConnect integrates instant translation with <span className="font-bold text-orange-500">speech-to-text transcription</span> in video conferencing. Instead of speech-to-speech translation, speech-to-text is used based on user feedback, ensuring clarity and reducing confusion. This feature provides real-time captions, helping participants follow discussions smoothly. 
+                   To break language barriers, WeConnect integrates instant translation with <span className="font-bold text-secondary">speech-to-text transcription</span> in video conferencing. Instead of speech-to-speech translation, speech-to-text is used based on user feedback, ensuring clarity and reducing confusion. This feature provides real-time captions, helping participants follow discussions smoothly. 
                   </p>
                   <br></br>
                   <p className={styles.projectSummary}>
-                    After the meeting, <span className="font-bold text-orange-500">detailed translated transcripts</span> remain accessible, ensuring no important details are missed. By minimizing communication gaps, instant translation makes meetings more inclusive and effective.
+                    After the meeting, <span className="font-bold text-secondary">detailed translated transcripts</span> remain accessible, ensuring no important details are missed. By minimizing communication gaps, instant translation makes meetings more inclusive and effective.
                   </p>
                 </div>        
             </div>

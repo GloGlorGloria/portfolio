@@ -330,7 +330,7 @@ export default function Relay() {
               </div>
               <iframe 
                 className={styles.figmaEmbed} 
-                src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/TiCeTfzkb5qknBkhFhYRGB/WeConnect-%E2%80%94-Instant-Translation-Video-Conferencing?node-id=50760-47724"
+                src="https://embed.figma.com/design/TiCeTfzkb5qknBkhFhYRGB/WeConnect-%E2%80%94-Instant-Translation-Video-Conferencing?node-id=50760-47724&embed-host=share" 
                 allowFullScreen
               ></iframe>
             </div>

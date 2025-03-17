@@ -330,7 +330,7 @@ export default function Relay() {
               </div>
               <iframe 
                 className={styles.figmaEmbed} 
-                src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/TiCeTfzkb5qknBkhFhYRGB/WeConnect-%E2%80%94-Instant-Translation-Video-Conferencing?node-id=50760-47724"
+                src="https://embed.figma.com/design/TiCeTfzkb5qknBkhFhYRGB/WeConnect-%E2%80%94-Instant-Translation-Video-Conferencing?node-id=50760-47724&embed-host=share" 
                 allowFullScreen
               ></iframe>
             </div>
@@ -347,7 +347,7 @@ export default function Relay() {
             <h2 className={styles.sectionTitle}>1. Video Conferencing <PiVideoConferenceFill className={styles.designIcon__small}/> </h2>
                 <div className="mb-4">
                   <p className={styles.projectSummary}>
-                    WeConnect's core feature is video conferencing, designed for seamless and effortless meeting creation to connect with others. <span className="font-bold  text-orange-500">Large action buttons</span> on the home page make it easy to start a meeting with a simple checkbox setup and invite participants via a shareable link. Scheduled meetings are displayed on the home screen for better planning. The interface also enables smooth screen-swiping to switch between different profile display modes. 
+                    WeConnect's core feature is video conferencing, designed for seamless and effortless meeting creation to connect with others. <span className="font-bold text-secondary">Large action buttons</span> on the home page make it easy to start a meeting with a simple checkbox setup and invite participants via a shareable link. Scheduled meetings are displayed on the home screen for better planning. The interface also enables smooth screen-swiping to switch between different profile display modes. 
                   </p>
                   <br></br>
                   <p className={styles.projectSummary}> 

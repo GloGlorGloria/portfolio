@@ -574,7 +574,9 @@
   .button__right{
     font-weight: 600;
     font-size:0.8rem;
-    padding:0.45rem 0.2rem 0.35rem 0.2rem;
+    padding:0.55rem 0.2rem;
+    }
+  
   }
 
   .skillsItem{
