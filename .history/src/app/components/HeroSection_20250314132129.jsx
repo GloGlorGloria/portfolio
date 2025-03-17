@@ -1,0 +1,68 @@
+"use client";
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { GoArrowUpRight } from "react-icons/go";
+import { FaAddressCard } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
+import styles from "./HeroSection.module.css";
+
+const HeroSection = () => {
+  return (
+    <motion.section 
+      className="relative min-h-screen transition-all duration-1000 ease-in-out"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 0.5 }} // Delay for smooth transition
+    >
+      <div className="grid place-items-center grid-cols-1 py-28 sm:grid-cols-12 mb-16 sm:mb-4">
+        <div className="col-span-7 place-self-center text-center sm:text-left">
+          <h1 className={styles.greeting__container}>
+            <span className={styles.greeting}>Hello, I'm </span>
+            <br />
+            <TypeAnimation 
+              sequence={[
+                "Gloria Chan", 1000, 
+                "UX/UI Designer", 1000, 
+                "Digital Marketer", 1000, 
+                "Project Manager", 1000
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          </h1>
+
+          <p className={styles.description}>
+            combines <span className={styles.span}>Resilience</span>, 
+            <span className={styles.span}> Innovation</span>, and 
+            <span className={styles.span}> Adaptability</span> 
+            to create human-centered designs with <span className={styles.span}>infinite possibilities</span>.
+          </p>
+
+          <div className={styles.buttons}>
+            <Link href="/projects" passHref>
+              <button className={styles.button__left}>
+                See my work <GoArrowUpRight className={styles.goArrow} />
+              </button>
+            </Link>
+            <Link href="/about" passHref>
+              <button className={styles.button__right}>
+                <span className="block bg-[#fff0df] rounded-full px-5 py-2">
+                  More about me <FaAddressCard className={styles.flipIcon} />
+                </span>
+              </button>
+            </Link>
+          </div>
+        </div>
+
+        <div className="col-span-5 justify-self-end mt-4 lg:mt-0">
+          <Image className={styles.logo} src="/Logo.png" alt="My Logo" width={500} height={300} />
+        </div>
+      </div>
+    </motion.section>
+  );
+};
+
+export default HeroSection;
