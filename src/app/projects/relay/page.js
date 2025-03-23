@@ -683,7 +683,7 @@ export default function Relay() {
             </div>
         </section>
         <div className={styles.nextProject}>
-          <Link href="/projects/e-magazine" passHref>
+          <Link href="/projects/weconnect" passHref>
               <button className={styles.nextButton}>Next Project<FaHandPointRight className={`${styles.nextArrow}`}/></button>
           </Link> 
         </div>
