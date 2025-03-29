@@ -41,10 +41,7 @@ const LandingPage = () => {
             <SplineBackground />
           </div>
 
-          <motion.p className="mb-8 text-lg text-gray-700 italic"
-          initial={{ y: -150, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 2, ease: "easeOut" }}>
+          <motion.p className="mb-8 text-lg text-gray-700 italic">
             Wondering what powers me? Hover the swinging letters to discover.
           </motion.p>
 
@@ -105,7 +102,7 @@ const LandingPage = () => {
             </motion.span>
           </motion.h1>
 
-          <div className="mt-10 h-10 mb-11">
+          <div className="mt-10 h-10">
             {hoverWord && (
               <motion.p
               className={`text-4xl font-bold tracking-wide flex items-center justify-center gap-2 ${
@@ -130,13 +127,21 @@ const LandingPage = () => {
           </div>
 
           <motion.div
-            className="absolute bottom-[-10%] flex flex-col items-center text-primary"
-            initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 7 }}
+            className="absolute bottom-12 flex flex-col items-center text-primary"
+            initial={{ opacity: 1 }}
+            animate={{ opacity: isIntroComplete ? 0 : 1 }}
+            transition={{ duration: 0.5 }}
           >
-            <p className="text-xl mb-8"
-            ><PiShootingStarFill className ="text-accent"/> All together</p>
+            <p className="text-xl mb-8"></p>
+            <motion.div
+                className="absolute bottom-20 left-1/2"
+                initial={{ x: '-50%', y: 0, opacity: 1, rotate: 0 }}
+                animate={isIntroComplete ? { x: '200%', y: '-200%', opacity: 0, rotate: 45 } : {}}
+                transition={{ duration: 2, ease: "easeInOut" }}
+              >
+                <PiShootingStarFill className="text-accent text-3xl" />
+            </motion.div>
+{/* <PiShootingStarFill className ="text-accent"/> All together</p> */}
             <FaAnglesDown className="text-[var(--accent)] w-10 h-auto mx-auto flex justify-center items-center mb-32 animate-bounce" />
           </motion.div>
         </motion.div>

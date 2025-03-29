@@ -1,9 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaAnglesDown, FaInfinity } from "react-icons/fa6";
-import { FaRegLightbulb, FaHeartbeat } from "react-icons/fa";
-import { PiShootingStarFill } from "react-icons/pi";
+import { FaAnglesDown, FaHeartbeat, FaInfinity } from "react-icons/fa6";
+import { FaRegLightbulb } from "react-icons/fa";
 import HeroSection from "./HeroSection";
 import SplineBackground from "./SplineBackground";
 import styles from "./LandingPage.module.css";
@@ -41,11 +40,8 @@ const LandingPage = () => {
             <SplineBackground />
           </div>
 
-          <motion.p className="mb-8 text-lg text-gray-700 italic"
-          initial={{ y: -150, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 2, ease: "easeOut" }}>
-            Wondering what powers me? Hover the swinging letters to discover.
+          <motion.p className="mb-4 text-lg text-gray-700 italic">
+            Curious what powers me? Hover the swinging letters to find out.
           </motion.p>
 
           <motion.h1
@@ -56,27 +52,26 @@ const LandingPage = () => {
           >
             GloGlo
             <motion.span
-                className={`${styles.hanging} ${styles.gradient}`}
-                initial={{ scale: 1 }}
-                animate={{ rotate: [-10, 10, -10], y: [0, 5, 0], scale: 1 }}
-                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
-                whileHover={{ scale: 1.2 }}
-                onMouseEnter={() => setHoverWord("Resilience")}
-                onMouseLeave={() => setHoverWord("")}
-              >
+              className={`${styles.hanging} ${styles.gradient}`}
+              animate={{ rotate: [-10, 10, -10], y: [0, 5, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
+              whileHover={{ scale: 1.2 }}
+              onMouseEnter={() => setHoverWord("Resilience")}
+              onMouseLeave={() => setHoverWord("")}
+            >
               r
             </motion.span>
             Glor
             <motion.span
               className={`${styles.hanging} ${styles.gradient}`}
-              initial={{ scale: 1 }}
               animate={{ rotate: [-5, 5, -5] }}
               transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
               whileHover={{
                 opacity: [0.6, 1, 0.6],
+                scale: 1.1,
                 transition: {
-                  repeat: 5,
-                  duration: 1,
+                  repeat: Infinity,
+                  duration: 0.4,
                   ease: "easeInOut"
                 }
               }}
@@ -105,7 +100,7 @@ const LandingPage = () => {
             </motion.span>
           </motion.h1>
 
-          <div className="mt-10 h-10 mb-11">
+          <div className="mt-10 h-10">
             {hoverWord && (
               <motion.p
               className={`text-4xl font-bold tracking-wide flex items-center justify-center gap-2 ${
@@ -130,14 +125,26 @@ const LandingPage = () => {
           </div>
 
           <motion.div
-            className="absolute bottom-[-10%] flex flex-col items-center text-primary"
-            initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 7 }}
+            className="absolute bottom-12 flex flex-col items-center text-gray-500"
+            initial={{ opacity: 1 }}
+            animate={{ opacity: isIntroComplete ? 0 : 1 }}
+            transition={{ duration: 0.5 }}
           >
-            <p className="text-xl mb-8"
-            ><PiShootingStarFill className ="text-accent"/> All together</p>
-            <FaAnglesDown className="text-[var(--accent)] w-10 h-auto mx-auto flex justify-center items-center mb-32 animate-bounce" />
+            {/* Meteor effect */}
+            <motion.div
+              className="absolute bottom-20 left-1/2"
+              initial={{ x: '-50%', y: 0, opacity: 1, rotate: 0 }}
+              animate={isIntroComplete ? { x: '200%', y: '-200%', opacity: 0, rotate: 45 } : {}}
+              transition={{ duration: 2, ease: "easeInOut" }}
+            >
+              <PiShootingStarFill className="text-accent text-3xl" />
+            </motion.div>
+
+            <p className="text-sm">Scroll down</p>
+            <FaAnglesDown className="text-[var(--accent)] w-12 h-auto mx-auto flex justify-center items-center mb-32 animate-bounce" />
+          </motion.div>
+            <p className="text-sm">Scroll down</p>
+            <FaAnglesDown className="text-[var(--accent)] w-12 h-auto mx-auto flex justify-center items-center mb-32 animate-bounce" />
           </motion.div>
         </motion.div>
       )}

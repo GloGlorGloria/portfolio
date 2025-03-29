@@ -105,7 +105,7 @@ const LandingPage = () => {
             </motion.span>
           </motion.h1>
 
-          <div className="mt-10 h-10 mb-11">
+          <div className="mt-10 h-10">
             {hoverWord && (
               <motion.p
               className={`text-4xl font-bold tracking-wide flex items-center justify-center gap-2 ${
@@ -130,10 +130,10 @@ const LandingPage = () => {
           </div>
 
           <motion.div
-            className="absolute bottom-[-10%] flex flex-col items-center text-primary"
+            className="absolute bottom-1 flex flex-col items-center text-primary"
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 7 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 1 }}
           >
             <p className="text-xl mb-8"
             ><PiShootingStarFill className ="text-accent"/> All together</p>
