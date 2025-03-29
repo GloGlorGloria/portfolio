@@ -53,89 +53,89 @@ const LandingPage = () => {
           animate={{ opacity: isLandingComplete ? 0 : 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-            <div className={styles.spline}>
-              <SplineBackground />
-            </div>
+          <div className={styles.spline}>
+            <SplineBackground />
+          </div>
 
-            <motion.p
-              className={styles.prompt}
-              initial={{ y: -150, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 2, ease: "easeOut" }}
-            >
-              Wondering what powers me? Hover the swinging letters to discover.
-            </motion.p>
+          <motion.p
+            className={styles.prompt}
+            initial={{ y: -150, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 2, ease: "easeOut" }}
+          >
+            Wondering what powers me? Hover the swinging letters to discover.
+          </motion.p>
 
-            <motion.h1
-              className={styles.heading}
-              initial={{ y: -150, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 2, ease: "easeOut" }}
-            >
-              GloGlo
-                <motion.span
-                  className={`${styles.hanging} ${styles.gradient}`}
-                  initial={{ scale: 1 }}
-                  animate={{ rotate: [-10, 10, -10], y: [0, 5, 0], scale: 1 }}
-                  transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
-                  whileHover={{ scale: 1.2, transition: { duration: 0.5, ease: "easeIn" } }}
-                  whileTap={{ scale: 0.8 }}
-                  onMouseEnter={() => setHoverWord("Resilience")}
-                  onMouseLeave={() => setHoverWord("")}
-                >
-                  r
-                </motion.span>
-              Glor
-                <motion.span
-                  className={`${styles.hanging} ${styles.gradient}`}
-                  initial={{ scale: 1 }}
-                  animate={{ rotate: [-5, 5, -5] }}
-                  transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
-                  whileHover={{
-                    opacity: [0.6, 1, 0.6],
-                    scale: 1.1,
-                    transition: {
-                      repeat: Infinity,
-                      duration: 0.4,
-                      ease: "easeInOut",
-                    },
-                  }}
-                  onMouseEnter={() => setHoverWord("Innovation")}
-                  onMouseLeave={() => setHoverWord("")}
-                >
-                  i
-                </motion.span>
-                <motion.span
-                  className={`${styles.hanging} ${styles.gradient}`}
-                  animate={{ rotate: [-5, 5, -5] }}
-                  transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
-                  whileHover={{
-                    scale: [1, 1.1, 0.95, 1.05, 1],
-                    borderRadius: ["0%", "20%", "40%", "20%", "0%"],
-                    transition: {
-                      repeat: Infinity,
-                      duration: 1.2,
-                      ease: "easeInOut",
-                    },
-                  }}
-                  onMouseEnter={() => setHoverWord("Adaptability")}
-                  onMouseLeave={() => setHoverWord("")}
-                >
-                  a
-                </motion.span>
-            </motion.h1>
+          <motion.h1
+            className={styles.heading}
+            initial={{ y: -150, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 2, ease: "easeOut" }}
+          >
+            GloGlo
+              <motion.span
+                className={`${styles.hanging} ${styles.gradient}`}
+                initial={{ scale: 1 }}
+                animate={{ rotate: [-10, 10, -10], y: [0, 5, 0], scale: 1 }}
+                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
+                whileHover={{ scale: 1.2, transition: { duration: 0.5, ease: "easeIn" } }}
+                whileTap={{ scale: 0.8 }}
+                onMouseEnter={() => setHoverWord("Resilience")}
+                onMouseLeave={() => setHoverWord("")}
+              >
+                r
+              </motion.span>
+            Glor
+              <motion.span
+                className={`${styles.hanging} ${styles.gradient}`}
+                initial={{ scale: 1 }}
+                animate={{ rotate: [-5, 5, -5] }}
+                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
+                whileHover={{
+                  opacity: [0.6, 1, 0.6],
+                  scale: 1.1,
+                  transition: {
+                    repeat: Infinity,
+                    duration: 0.4,
+                    ease: "easeInOut",
+                  },
+                }}
+                onMouseEnter={() => setHoverWord("Innovation")}
+                onMouseLeave={() => setHoverWord("")}
+              >
+                i
+              </motion.span>
+              <motion.span
+                className={`${styles.hanging} ${styles.gradient}`}
+                animate={{ rotate: [-5, 5, -5] }}
+                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
+                whileHover={{
+                  scale: [1, 1.1, 0.95, 1.05, 1],
+                  borderRadius: ["0%", "20%", "40%", "20%", "0%"],
+                  transition: {
+                    repeat: Infinity,
+                    duration: 1.2,
+                    ease: "easeInOut",
+                  },
+                }}
+                onMouseEnter={() => setHoverWord("Adaptability")}
+                onMouseLeave={() => setHoverWord("")}
+              >
+                a
+              </motion.span>
+          </motion.h1>
 
           <div className={styles.hoverWordContainer}>
-              {hoverWord && (
-                  <motion.p
-                    className={`${styles.hoverWords}  ${getWordData()?.color}`}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.4 }}
-                  >
-                    {hoverWord} {getWordData()?.icon}
-                  </motion.p>
-              )}
+            {hoverWord && (
+              <motion.p
+                className={`${styles.hoverWords}  ${getWordData()?.color}`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.4 }}
+              >
+                {hoverWord} {getWordData()?.icon}
+              </motion.p>
+            )}
           </div>
 
           <motion.div
