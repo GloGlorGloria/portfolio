@@ -161,7 +161,7 @@ const LandingPage = () => {
               {isHovering ? (
                 <Typewriter
                   words={["= Resilience + Innovation + Adaptability"]}
-                  loop={1}
+                  loop={Infinity}
                   typeSpeed={60}
                   deleteSpeed={0}
                   delaySpeed={1000}

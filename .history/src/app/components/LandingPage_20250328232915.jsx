@@ -154,7 +154,7 @@ const LandingPage = () => {
                 setIsHovering(false);
                 setHoverWord("");
               }}
-              animate={{ color: ["var(--primary)", "var(--secondary)", "var(--accent)"] }}
+              // animate={{ color: ["var(--primary)", "var(--secondary)", "var(--accent)"] }}
               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             >
               <PiShootingStarFill className="inline-block mr-2" />

@@ -160,6 +160,7 @@ const LandingPage = () => {
               <PiShootingStarFill className="inline-block mr-2" />
               {isHovering ? (
                 <Typewriter
+                  key={isHovering ? Date.now() : "static"}
                   words={["= Resilience + Innovation + Adaptability"]}
                   loop={1}
                   typeSpeed={60}

@@ -125,7 +125,8 @@
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid var(--primary);
+    border-right: 2px solid var(--text);
+    width: 0;
     animation: typing 4s steps(50, end) forwards, blink 0.75s step-end infinite;
   }
   

@@ -40,13 +40,6 @@
     z-index: -10;
   }
 
-  .prompt{
-    margin-bottom: 2.5rem;
-    font-size: 1.125rem;
-    color: var(--primary);
-    font-style: italic;
-  }
-
   .heading{
     font-size: 10rem;
     letter-spacing: 0.12em;
@@ -86,61 +79,5 @@
     margin-top: 30px;
     font-size: 1rem;
     opacity: 0.6;
-  }
-
-  .allTogether {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-
-  .downArrow {
-    width: 2rem;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8rem;
-    animation: bounce 1.5s infinite ease-in-out;
-    color: var(--accent);
-  }
-
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-
-  .typingText {
-    margin-top: 1rem;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--primary);
-  }
-  
-  .typingAnimation {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid var(--primary);
-    animation: typing 4s steps(50, end) forwards, blink 0.75s step-end infinite;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
   }
   

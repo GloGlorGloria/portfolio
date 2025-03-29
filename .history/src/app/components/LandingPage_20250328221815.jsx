@@ -6,20 +6,11 @@ import { FaRegLightbulb, FaHeartbeat } from "react-icons/fa";
 import { PiShootingStarFill } from "react-icons/pi";
 import HeroSection from "./HeroSection";
 import SplineBackground from "./SplineBackground";
-import { Typewriter } from "react-simple-typewriter";
 import styles from "./LandingPage.module.css";
-
-const WORD_MAP = [
-  { word: "Resilience", icon: <FaHeartbeat />, color: "text-[var(--primary)]" },
-  { word: "Innovation", icon: <FaRegLightbulb />, color: "text-[var(--secondary)]" },
-  { word: "Adaptability", icon: <FaInfinity />, color: "text-[var(--accent)]" },
-];
 
 const LandingPage = () => {
   const [isLandingComplete, setIsLandingComplete] = useState(false);
   const [hoverWord, setHoverWord] = useState("");
-  const [isHovering, setIsHovering] = useState(false);
-  const [typed, setTyped] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,13 +28,6 @@ const LandingPage = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const match = WORD_MAP.find(({ word }) => typed.includes(word));
-    setHoverWord(match?.word || "");
-  }, [typed]);
-
-  const getWordData = () => WORD_MAP.find(({ word }) => word === hoverWord);
-
   return (
     <div className="relative">
       {!isLandingComplete && (
@@ -57,12 +41,10 @@ const LandingPage = () => {
             <SplineBackground />
           </div>
 
-          <motion.p
-            className={styles.prompt}
-            initial={{ y: -150, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 2, ease: "easeOut" }}
-          >
+          <motion.p className={styles.prompt}
+          initial={{ y: -150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2, ease: "easeOut" }}>
             Wondering what powers me? Hover the swinging letters to discover.
           </motion.p>
 
@@ -74,31 +56,30 @@ const LandingPage = () => {
           >
             GloGlo
             <motion.span
-              className={`${styles.hanging} ${styles.gradient}`}
-              initial={{ scale: 1 }}
-              animate={{ rotate: [-10, 10, -10], y: [0, 5, 0], scale: 1 }}
-              transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
-              whileHover={{ scale: 1.2, transition: { duration: 0.5, ease: "easeIn" } }}
-              whileTap={{ scale: 0.8 }}
-              onMouseEnter={() => setHoverWord("Resilience")}
-              onMouseLeave={() => setHoverWord("")}
-            >
+                className={`${styles.hanging} ${styles.gradient}`}
+                initial={{ scale: 1 }}
+                animate={{ rotate: [-10, 10, -10], y: [0, 5, 0], scale: 1 }}
+                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
+                whileHover={{ scale: 1.2 }}
+                onMouseEnter={() => setHoverWord("Resilience")}
+                onMouseLeave={() => setHoverWord("")}
+              >
               r
             </motion.span>
             Glor
             <motion.span
               className={`${styles.hanging} ${styles.gradient}`}
               initial={{ scale: 1 }}
-              animate={{ rotate: [-5, 5, -5] }}
+              animate={{ rotate: [-5, 5, -5], , scale: 1  }}
               transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
               whileHover={{
                 opacity: [0.6, 1, 0.6],
-                scale: 1.1,
+                scale: [1.1],
                 transition: {
-                  repeat: Infinity,
-                  duration: 0.4,
-                  ease: "easeInOut",
-                },
+                  repeat: 5,
+                  duration: 1,
+                  ease: "easeInOut"
+                }
               }}
               onMouseEnter={() => setHoverWord("Innovation")}
               onMouseLeave={() => setHoverWord("")}
@@ -115,8 +96,8 @@ const LandingPage = () => {
                 transition: {
                   repeat: Infinity,
                   duration: 1.2,
-                  ease: "easeInOut",
-                },
+                  ease: "easeInOut"
+                }
               }}
               onMouseEnter={() => setHoverWord("Adaptability")}
               onMouseLeave={() => setHoverWord("")}
@@ -128,13 +109,24 @@ const LandingPage = () => {
           <div className="mt-10 h-10 mb-11">
             {hoverWord && (
               <motion.p
-                className={`text-4xl font-bold tracking-wide flex items-center justify-center gap-2 ${getWordData()?.color}`}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.4 }}
-              >
-                {hoverWord} {getWordData()?.icon}
-              </motion.p>
+              className={`text-4xl font-bold tracking-wide flex items-center justify-center gap-2 ${
+                hoverWord === 'Resilience'
+                  ? 'text-[var(--primary)]'
+                  : hoverWord === 'Innovation'
+                  ? 'text-[var(--secondary)]'
+                  : hoverWord === 'Adaptability'
+                  ? 'text-[var(--accent)]'
+                  : ''
+              }`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.4 }}
+            >
+              {hoverWord}
+              {hoverWord === 'Resilience' && <FaHeartbeat />}
+              {hoverWord === 'Innovation' && <FaRegLightbulb />}
+              {hoverWord === 'Adaptability' && <FaInfinity />}
+            </motion.p>
             )}
           </div>
 
@@ -144,34 +136,9 @@ const LandingPage = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 7 }}
           >
-            <motion.p
-              className={styles.allTogether}
-              onMouseEnter={() => {
-                setIsHovering(true);
-                setTyped("");
-              }}
-              onMouseLeave={() => {
-                setIsHovering(false);
-                setHoverWord("");
-              }}
-              animate={{ color: ["var(--primary)", "var(--secondary)", "var(--accent)"] }}
-              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            >
-              <PiShootingStarFill className="inline-block mr-2" />
-              {isHovering ? (
-                <Typewriter
-                  words={["= Resilience + Innovation + Adaptability"]}
-                  loop={1}
-                  typeSpeed={60}
-                  deleteSpeed={0}
-                  delaySpeed={1000}
-                  onType={(char) => setTyped((prev) => prev + char)}
-                />
-              ) : (
-                "All together"
-              )}
-            </motion.p>
-            <FaAnglesDown className={styles.downArrow} />
+            <p className="text-xl mb-8"
+            ><PiShootingStarFill className ="text-accent"/> All together</p>
+            <FaAnglesDown className="text-[var(--accent)] w-10 h-auto mx-auto flex justify-center items-center mb-32 animate-bounce" />
           </motion.div>
         </motion.div>
       )}

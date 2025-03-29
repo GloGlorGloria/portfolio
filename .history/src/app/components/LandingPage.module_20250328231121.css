@@ -126,7 +126,9 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid var(--primary);
+    width: 0;
     animation: typing 4s steps(50, end) forwards, blink 0.75s step-end infinite;
+    max-width: 100%;
   }
   
   @keyframes typing {
