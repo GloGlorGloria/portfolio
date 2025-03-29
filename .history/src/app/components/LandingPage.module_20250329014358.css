@@ -186,6 +186,9 @@
     .interactive {
       font-size: 1.25rem;
     }
+    .hint {
+      font-size: 1rem;
+    }
   }
   
   @media (max-width: 768px) {
@@ -206,17 +209,15 @@
       font-size: 1rem;
       gap: 10px;
     }
-  
+    .hint {
+      font-size: 0.9rem;
+    }
     .downArrow {
       margin-bottom: 5rem;
     }
     .typingText {
       font-size: 1rem;
     }
-
-    .allTogetherContainer{
-      bottom: 10%;
-    };
   }
   
   
