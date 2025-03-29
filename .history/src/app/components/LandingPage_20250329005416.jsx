@@ -73,56 +73,56 @@ const LandingPage = () => {
             transition={{ duration: 2, ease: "easeOut" }}
           >
             GloGlo
-              <motion.span
-                className={`${styles.hanging} ${styles.gradient}`}
-                initial={{ scale: 1 }}
-                animate={{ rotate: [-10, 10, -10], y: [0, 5, 0], scale: 1 }}
-                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
-                whileHover={{ scale: 1.2, transition: { duration: 0.5, ease: "easeIn" } }}
-                whileTap={{ scale: 0.8 }}
-                onMouseEnter={() => setHoverWord("Resilience")}
-                onMouseLeave={() => setHoverWord("")}
-              >
-                r
-              </motion.span>
+            <motion.span
+              className={`${styles.hanging} ${styles.gradient}`}
+              initial={{ scale: 1 }}
+              animate={{ rotate: [-10, 10, -10], y: [0, 5, 0], scale: 1 }}
+              transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
+              whileHover={{ scale: 1.2, transition: { duration: 0.5, ease: "easeIn" } }}
+              whileTap={{ scale: 0.8 }}
+              onMouseEnter={() => setHoverWord("Resilience")}
+              onMouseLeave={() => setHoverWord("")}
+            >
+              r
+            </motion.span>
             Glor
-              <motion.span
-                className={`${styles.hanging} ${styles.gradient}`}
-                initial={{ scale: 1 }}
-                animate={{ rotate: [-5, 5, -5] }}
-                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
-                whileHover={{
-                  opacity: [0.6, 1, 0.6],
-                  scale: 1.1,
-                  transition: {
-                    repeat: Infinity,
-                    duration: 0.4,
-                    ease: "easeInOut",
-                  },
-                }}
-                onMouseEnter={() => setHoverWord("Innovation")}
-                onMouseLeave={() => setHoverWord("")}
-              >
-                i
-              </motion.span>
-              <motion.span
-                className={`${styles.hanging} ${styles.gradient}`}
-                animate={{ rotate: [-5, 5, -5] }}
-                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
-                whileHover={{
-                  scale: [1, 1.1, 0.95, 1.05, 1],
-                  borderRadius: ["0%", "20%", "40%", "20%", "0%"],
-                  transition: {
-                    repeat: Infinity,
-                    duration: 1.2,
-                    ease: "easeInOut",
-                  },
-                }}
-                onMouseEnter={() => setHoverWord("Adaptability")}
-                onMouseLeave={() => setHoverWord("")}
-              >
-                a
-              </motion.span>
+            <motion.span
+              className={`${styles.hanging} ${styles.gradient}`}
+              initial={{ scale: 1 }}
+              animate={{ rotate: [-5, 5, -5] }}
+              transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
+              whileHover={{
+                opacity: [0.6, 1, 0.6],
+                scale: 1.1,
+                transition: {
+                  repeat: Infinity,
+                  duration: 0.4,
+                  ease: "easeInOut",
+                },
+              }}
+              onMouseEnter={() => setHoverWord("Innovation")}
+              onMouseLeave={() => setHoverWord("")}
+            >
+              i
+            </motion.span>
+            <motion.span
+              className={`${styles.hanging} ${styles.gradient}`}
+              animate={{ rotate: [-5, 5, -5] }}
+              transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 2 }}
+              whileHover={{
+                scale: [1, 1.1, 0.95, 1.05, 1],
+                borderRadius: ["0%", "20%", "40%", "20%", "0%"],
+                transition: {
+                  repeat: Infinity,
+                  duration: 1.2,
+                  ease: "easeInOut",
+                },
+              }}
+              onMouseEnter={() => setHoverWord("Adaptability")}
+              onMouseLeave={() => setHoverWord("")}
+            >
+              a
+            </motion.span>
           </motion.h1>
 
           <div className="mt-10 h-10 mb-11">
@@ -162,7 +162,7 @@ const LandingPage = () => {
                 <PiShootingStarFill className="inline-block mr-2" />
                   {isHovering ? (
                     <Typewriter
-                      words={["Resilience + Innovation + Adaptability = Infinite Possibilities"]}
+                      words={["Resilience + Innovation + Adaptability = Inifinite Possibilities"]}
                       loop={1}
                       typeSpeed={60}
                       deleteSpeed={0}

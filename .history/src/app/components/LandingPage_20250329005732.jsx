@@ -162,7 +162,7 @@ const LandingPage = () => {
                 <PiShootingStarFill className="inline-block mr-2" />
                   {isHovering ? (
                     <Typewriter
-                      words={["Resilience + Innovation + Adaptability = Infinite Possibilities"]}
+                      words={["Resilience + Innovation + Adaptability = Inifinite Possibilities"]}
                       loop={1}
                       typeSpeed={60}
                       deleteSpeed={0}
