@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Hanged Letters";
+  src: url("/fonts/Hanged Letters.ttf") format("truetype");
+}
+
+.heading {
+  font-family: "Hanged Letters", sans-serif;
+  font-size: 8rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* 🎨 Gradient Effect for "i" and "a" */
+.gradient {
+  background: linear-gradient(45deg, #ff6b6b, #ffa502);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 🎭 Hanging Letter Animation */
+.hanging {
+  display: inline-block;
+  transform-origin: top center; /* Rotate from the top */
+}
